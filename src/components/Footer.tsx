@@ -66,13 +66,13 @@ export default function Footer() {
           </h4>
           <ul className="space-y-3 text-sm text-mist">
             <li>
-              <a href="mailto:hello@stcmarketing.com" className="hover:text-pine-light transition-colors">
-                hello@stcmarketing.com
+              <a href="mailto:stcmarketingco@gmail.com" className="hover:text-pine-light transition-colors">
+                stcmarketingco@gmail.com
               </a>
             </li>
             <li>
-              <a href="tel:+15035551234" className="hover:text-pine-light transition-colors">
-                (503) 555-1234
+              <a href="tel:+15038080452" className="hover:text-pine-light transition-colors">
+                (503) 808-0452
               </a>
             </li>
             <li className="text-mist">Serving Oregon, USA</li>

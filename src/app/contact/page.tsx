@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 };
 
 const DETAILS = [
-  { label: "Email", value: "hello@stcmarketing.com", href: "mailto:hello@stcmarketing.com" },
-  { label: "Phone", value: "(503) 555-1234", href: "tel:+15035551234" },
+  { label: "Email", value: "stcmarketingco@gmail.com", href: "mailto:stcmarketingco@gmail.com" },
+  { label: "Phone", value: "(503) 808-0452", href: "tel:+15038080452" },
   { label: "Service area", value: "Oregon, statewide" },
 ];
 

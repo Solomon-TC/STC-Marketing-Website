@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Reveal from "./Reveal";
@@ -34,6 +34,16 @@ const SLIDES: Slide[] = [
 
 export default function PortfolioCarousel() {
   const [index, setIndex] = useState(0);
+  const paused = useRef(false);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      if (!paused.current) {
+        setIndex((i) => (i + 1) % SLIDES.length);
+      }
+    }, 4000);
+    return () => clearInterval(id);
+  }, []);
 
   function go(delta: number) {
     setIndex((i) => (i + delta + SLIDES.length) % SLIDES.length);
@@ -74,7 +84,11 @@ export default function PortfolioCarousel() {
           </div>
         </div>
 
-        <div className="mt-12 relative aspect-[16/10] sm:aspect-[16/8] w-full overflow-hidden rounded-2xl border border-white/10">
+        <div
+          className="mt-12 relative aspect-[16/10] sm:aspect-[16/8] w-full overflow-hidden rounded-2xl border border-white/10"
+          onMouseEnter={() => { paused.current = true; }}
+          onMouseLeave={() => { paused.current = false; }}
+        >
           <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={index}
