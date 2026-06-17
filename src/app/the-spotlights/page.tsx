@@ -15,7 +15,7 @@ const FEATURES = [
   {
     title: "Shared postcard, shared cost",
     description:
-      "Multiple local businesses share one oversized card — so each business gets premium direct mail exposure at a fraction of what a solo campaign would cost.",
+      "Multiple local businesses share one oversized card — so each business gets premium direct mail exposure at a fraction of what a solo campaign would cost. Ad slots start at just $200, which works out to only $0.04 per household.",
   },
   {
     title: "One business per industry",
