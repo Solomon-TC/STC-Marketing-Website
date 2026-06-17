@@ -27,7 +27,7 @@ export default function ServicesOverview() {
         <Reveal>
           <span className="text-xs uppercase tracking-widest text-pine-light">What we do</span>
           <h2 className="font-display text-balance mt-4 text-4xl text-paper sm:text-5xl max-w-2xl">
-            Two services. One job: get you more customers.
+            Built to grow your brand and fill your calendar.
           </h2>
         </Reveal>
 

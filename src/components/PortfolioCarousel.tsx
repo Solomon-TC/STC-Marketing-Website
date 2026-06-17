@@ -27,8 +27,10 @@ const SLIDES: Slide[] = [
     src: "/images/spotlight-back.png",
   },
   {
-    type: "photo",
-    label: "More work coming soon",
+    type: "image",
+    label: "The Corvo Spotlight — Card 1",
+    caption: "Corvo, OR · Efficient Roofing · Country Financial",
+    src: "/images/corvo-spotlight.png",
   },
 ];
 

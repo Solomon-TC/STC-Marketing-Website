@@ -105,7 +105,7 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-charcoal py-24 lg:py-32 border-t border-white/5">
-        <div className="mx-auto max-w-6xl px-6 lg:px-10 grid lg:grid-cols-[1.1fr_1fr] gap-14 items-center">
+        <div className="mx-auto max-w-4xl px-6 lg:px-10">
           <Reveal>
             <span className="text-xs uppercase tracking-widest text-pine-light">Our story</span>
             <h2 className="font-display text-balance mt-4 text-3xl text-paper sm:text-4xl">
@@ -127,13 +127,6 @@ export default function AboutPage() {
                 consistently, in the mailbox and online.
               </p>
             </div>
-          </Reveal>
-
-          <Reveal delay={0.1}>
-            <PhotoPlaceholder
-              label="Team photo coming soon"
-              className="aspect-[4/5] w-full rounded-2xl border border-white/10"
-            />
           </Reveal>
         </div>
       </section>
