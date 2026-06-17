@@ -1,20 +1,18 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useActionState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { submitContact, type FormState } from "./actions";
+
+const initial: FormState = { status: "idle" };
 
 export default function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
-
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setSubmitted(true);
-  }
+  const [state, action, pending] = useActionState(submitContact, initial);
 
   return (
     <div className="relative rounded-2xl border border-white/10 bg-charcoal p-8 lg:p-10">
       <AnimatePresence mode="wait">
-        {submitted ? (
+        {state.status === "success" ? (
           <motion.div
             key="success"
             initial={{ opacity: 0, y: 8 }}
@@ -38,7 +36,7 @@ export default function ContactForm() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onSubmit={handleSubmit}
+            action={action}
             className="grid gap-6"
           >
             <div className="grid sm:grid-cols-2 gap-6">
@@ -75,11 +73,17 @@ export default function ContactForm() {
                 placeholder="What's your service area, and what does success look like?"
               />
             </div>
+
+            {state.status === "error" && (
+              <p className="text-sm text-red-400">{state.message}</p>
+            )}
+
             <button
               type="submit"
-              className="cursor-pointer inline-flex items-center justify-center rounded-full bg-pine-light px-8 py-3.5 text-sm uppercase tracking-wide text-ink transition-transform duration-300 hover:scale-[1.02] hover:bg-pine"
+              disabled={pending}
+              className="cursor-pointer inline-flex items-center justify-center rounded-full bg-pine-light px-8 py-3.5 text-sm uppercase tracking-wide text-ink transition-all duration-300 hover:scale-[1.02] hover:bg-pine disabled:opacity-60 disabled:cursor-not-allowed disabled:scale-100"
             >
-              Send Message
+              {pending ? "Sending…" : "Send Message"}
             </button>
           </motion.form>
         )}
