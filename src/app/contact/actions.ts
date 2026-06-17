@@ -32,7 +32,7 @@ export async function submitContact(
 
   try {
     await resend.emails.send({
-      from: "STC Marketing Contact Form <onboarding@resend.dev>",
+      from: "STC Marketing <contact@stcmarketingco.com>",
       to: "stcmarketingco@gmail.com",
       replyTo: email,
       subject: `New inquiry from ${name}${business ? ` — ${business}` : ""}`,
