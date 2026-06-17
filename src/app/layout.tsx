@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "STC Marketing | Direct Mail & Web Design in Oregon",
   description:
     "STC Marketing puts your business in thousands of Oregon mailboxes with The Spotlights, our oversized 9x12\" postcard mailer, and builds high-end websites that convert.",
-  metadataBase: new URL("https://stcmarketing.com"),
+  metadataBase: new URL("https://stcmarketingco.com"),
   openGraph: {
     title: "STC Marketing | Direct Mail & Web Design in Oregon",
     description:
@@ -38,7 +38,7 @@ const jsonLd = {
   name: "STC Marketing",
   description:
     "STC Marketing helps local businesses grow with The Spotlights — a shared 9×12″ direct mail postcard reaching 5,000 households per city — and custom high-end website design.",
-  url: "https://stcmarketing.com",
+  url: "https://stcmarketingco.com",
   email: "stcmarketingco@gmail.com",
   telephone: "+15038080452",
   areaServed: "Oregon, USA",
