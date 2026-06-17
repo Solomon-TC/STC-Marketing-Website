@@ -32,6 +32,47 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "STC Marketing",
+  description:
+    "STC Marketing helps local businesses grow with The Spotlights — a shared 9×12″ direct mail postcard reaching 5,000 households per city — and custom high-end website design.",
+  url: "https://stcmarketing.com",
+  email: "stcmarketingco@gmail.com",
+  telephone: "+15038080452",
+  areaServed: "Oregon, USA",
+  founder: [
+    { "@type": "Person", name: "Silas Capell" },
+    { "@type": "Person", name: "Solomon Capell" },
+  ],
+  sameAs: ["https://github.com/Solomon-TC/STC-Marketing-Website"],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Marketing Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "The Spotlights",
+          description:
+            "Shared 9×12″ direct mail postcard featuring multiple local businesses, mailed to 5,000 households per city. One business per industry.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Website Design",
+          description:
+            "Custom, high-end website design for local businesses — fast, mobile-first, and built to convert.",
+        },
+      },
+    ],
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -42,6 +83,12 @@ export default function RootLayout({
       lang="en"
       className={`${fraunces.variable} ${inter.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-ink text-paper">
         <Header />
         <main className="flex-1">{children}</main>
