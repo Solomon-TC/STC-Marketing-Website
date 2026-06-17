@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import type { PointerEvent } from "react";
 
@@ -61,9 +62,9 @@ export default function Hero() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
             className="font-display text-balance text-5xl leading-[1.05] text-paper sm:text-6xl lg:text-7xl"
           >
-            Marketing built to
-            <span className="text-tan italic"> grow </span>
-            your business.
+            Be the business
+            <span className="text-tan italic"> everyone </span>
+            in town knows.
           </motion.h1>
 
           <motion.p
@@ -134,31 +135,21 @@ export default function Hero() {
           >
             {/* back card */}
             <div className="absolute -right-6 -top-6 h-full w-full rounded-2xl border border-white/10 bg-graphite" />
-            {/* main postcard */}
-            <div className="relative aspect-[4/3] w-full rounded-2xl border border-white/10 bg-gradient-to-br from-charcoal to-ink shadow-2xl shadow-black/60 overflow-hidden">
-              <div className="absolute inset-0 p-7 flex flex-col justify-between">
-                <div className="flex items-start justify-between">
-                  <span className="text-[10px] uppercase tracking-[0.25em] text-pine-light">
-                    The Spotlights &mdash; Bend, OR
-                  </span>
-                  <span className="text-[10px] uppercase tracking-[0.25em] text-mist">
-                    9&Prime; &times; 12&Prime;
-                  </span>
-                </div>
-
-                <div className="space-y-2.5">
-                  {[
-                    { name: "Riverside Dental", tag: "Dental" },
-                    { name: "Cedar Creek Roofing", tag: "Roofing" },
-                    { name: "Cascade Landscaping", tag: "Landscaping" },
-                  ].map((biz) => (
-                    <div key={biz.name} className="flex items-center justify-between border border-white/8 rounded-lg px-3 py-2 bg-white/[0.03]">
-                      <span className="text-[11px] text-paper">{biz.name}</span>
-                      <span className="text-[9px] uppercase tracking-wide text-pine-light">{biz.tag}</span>
-                    </div>
-                  ))}
-                  <div className="mt-1 text-[10px] text-mist text-center pt-1">+ more local businesses</div>
-                </div>
+            {/* main postcard — real Spotlight photo */}
+            <div className="relative aspect-[4/3] w-full rounded-2xl border border-white/10 shadow-2xl shadow-black/60 overflow-hidden">
+              <Image
+                src="/images/spotlight-front.png"
+                alt="The Newberg Spotlight postcard — front"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
+              {/* subtle label overlay */}
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/70 to-transparent px-5 py-4">
+                <span className="text-[10px] uppercase tracking-[0.25em] text-pine-light">
+                  The Newberg Spotlight &mdash; April 2026
+                </span>
               </div>
             </div>
 
