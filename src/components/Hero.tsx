@@ -107,7 +107,7 @@ export default function Hero() {
             {[
               ["9x12\"", "Oversized format"],
               ["5,000", "Households per drop"],
-              ["1 per", "Industry on each card"],
+              ["1 business", "Per industry on each card"],
             ].map(([stat, label]) => (
               <div key={label}>
                 <div className="font-display text-3xl text-paper">{stat}</div>
