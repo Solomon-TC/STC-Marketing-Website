@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CtaBanner from "@/components/CtaBanner";
@@ -91,6 +91,26 @@ export default function SpotlightsPage() {
       />
 
       {/* How it works */}
+      {/* Newberg callout */}
+      <section className="bg-charcoal py-14 border-b border-white/5">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+          <Reveal>
+            <span className="text-xs uppercase tracking-widest text-pine-light">Now serving</span>
+            <p className="font-display mt-2 text-2xl text-paper">
+              The Newberg Spotlight is live — see the April 2026 card.
+            </p>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <Link
+              href="/the-spotlights/newberg"
+              className="shrink-0 inline-flex items-center justify-center rounded-full border border-pine-light/60 px-6 py-3 text-sm uppercase tracking-wide text-pine-light hover:bg-pine-light hover:text-ink transition-colors duration-300"
+            >
+              View the Newberg Spotlight →
+            </Link>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="bg-ink py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <Reveal>
