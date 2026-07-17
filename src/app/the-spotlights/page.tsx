@@ -86,7 +86,7 @@ export default function SpotlightsPage() {
             <span className="text-tan italic"> Zero competition.</span>
           </>
         }
-        description="The Spotlights is a shared 9x12\" postcard featuring multiple local businesses — each with their own exclusive industry slot — mailed to 5,000 households per city on a monthly or bi-monthly schedule."
+        description={"The Spotlights is a shared 9x12 postcard featuring multiple local businesses, each with their own exclusive industry slot, mailed to 5,000 households per city on a monthly or bi-monthly schedule."}
       />
 
       {/* Newberg callout */}
