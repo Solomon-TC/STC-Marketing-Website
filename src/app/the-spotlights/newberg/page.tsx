@@ -65,12 +65,12 @@ export default function NewbergSpotlightPage() {
         description="One oversized postcard. Local Newberg businesses. 5,000 households. The Newberg Spotlight connects the community to the best local businesses in town — delivered right to their mailbox."
       />
 
-      {/* Real card photos */}
+      {/* July 2026 card photos */}
       <section className="bg-ink py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-10">
           <Reveal>
             <span className="text-xs uppercase tracking-widest text-pine-light">
-              April 2026 edition
+              July 2026 edition
             </span>
             <h2 className="font-display text-balance mt-4 text-3xl text-paper sm:text-4xl max-w-2xl">
               See the Newberg Spotlight in action.
@@ -81,8 +81,49 @@ export default function NewbergSpotlightPage() {
             <Reveal>
               <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/60">
                 <Image
+                  src="/images/spotlight-july-front.png"
+                  alt="The Newberg Spotlight - front side, July 2026"
+                  width={900}
+                  height={600}
+                  className="w-full h-auto"
+                />
+              </div>
+              <p className="mt-3 text-xs uppercase tracking-widest text-mist text-center">Front</p>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/60">
+                <Image
+                  src="/images/spotlight-july-back.png"
+                  alt="The Newberg Spotlight - back side, July 2026"
+                  width={900}
+                  height={600}
+                  className="w-full h-auto"
+                />
+              </div>
+              <p className="mt-3 text-xs uppercase tracking-widest text-mist text-center">Back</p>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* April 2026 card photos */}
+      <section className="bg-charcoal py-24 lg:py-32 border-t border-white/5">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10">
+          <Reveal>
+            <span className="text-xs uppercase tracking-widest text-pine-light">
+              April 2026 edition
+            </span>
+            <h2 className="font-display text-balance mt-4 text-3xl text-paper sm:text-4xl max-w-2xl">
+              Our first Newberg Spotlight.
+            </h2>
+          </Reveal>
+
+          <div className="mt-12 grid sm:grid-cols-2 gap-6">
+            <Reveal>
+              <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/60">
+                <Image
                   src="/images/spotlight-front.png"
-                  alt="The Newberg Spotlight — front side, April 2026"
+                  alt="The Newberg Spotlight - front side, April 2026"
                   width={900}
                   height={600}
                   className="w-full h-auto"
@@ -94,7 +135,7 @@ export default function NewbergSpotlightPage() {
               <div className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/60">
                 <Image
                   src="/images/spotlight-back.png"
-                  alt="The Newberg Spotlight — back side, April 2026"
+                  alt="The Newberg Spotlight - back side, April 2026"
                   width={900}
                   height={600}
                   className="w-full h-auto"

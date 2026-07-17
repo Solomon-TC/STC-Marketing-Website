@@ -16,19 +16,31 @@ type Slide = {
 const SLIDES: Slide[] = [
   {
     type: "image",
-    label: "The Newberg Spotlight — Front",
+    label: "The Newberg Spotlight - July Front",
+    caption: "July 2026 · Newberg, OR · 5,000 households",
+    src: "/images/spotlight-july-front.png",
+  },
+  {
+    type: "image",
+    label: "The Newberg Spotlight - July Back",
+    caption: "July 2026 · Newberg, OR · featuring local businesses",
+    src: "/images/spotlight-july-back.png",
+  },
+  {
+    type: "image",
+    label: "The Newberg Spotlight - April Front",
     caption: "April 2026 · Newberg, OR · 5,000 households",
     src: "/images/spotlight-front.png",
   },
   {
     type: "image",
-    label: "The Newberg Spotlight — Back",
+    label: "The Newberg Spotlight - April Back",
     caption: "April 2026 · Newberg, OR · featuring local businesses",
     src: "/images/spotlight-back.png",
   },
   {
     type: "image",
-    label: "The Corvo Spotlight — Card 1",
+    label: "The Corvo Spotlight - Card 1",
     caption: "Corvo, OR · Efficient Roofing · Country Financial",
     src: "/images/corvo-spotlight.png",
   },

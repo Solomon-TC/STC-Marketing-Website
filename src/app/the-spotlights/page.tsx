@@ -95,7 +95,7 @@ export default function SpotlightsPage() {
           <Reveal>
             <span className="text-xs uppercase tracking-widest text-pine-light">Now serving</span>
             <p className="font-display mt-2 text-2xl text-paper">
-              The Newberg Spotlight is live — see the April 2026 card.
+              The Newberg Spotlight is live — see the July 2026 card.
             </p>
           </Reveal>
           <Reveal delay={0.1}>
@@ -138,8 +138,8 @@ export default function SpotlightsPage() {
             <div className="space-y-4">
               <div className="relative w-full rounded-2xl border border-white/10 overflow-hidden shadow-2xl shadow-black/60">
                 <Image
-                  src="/images/spotlight-front.png"
-                  alt="The Newberg Spotlight — front"
+                  src="/images/spotlight-july-front.png"
+                  alt="The Newberg Spotlight - July 2026 front"
                   width={900}
                   height={600}
                   className="w-full h-auto"
@@ -147,15 +147,15 @@ export default function SpotlightsPage() {
               </div>
               <div className="relative w-full rounded-2xl border border-white/10 overflow-hidden shadow-xl shadow-black/40">
                 <Image
-                  src="/images/spotlight-back.png"
-                  alt="The Newberg Spotlight — back"
+                  src="/images/spotlight-july-back.png"
+                  alt="The Newberg Spotlight - July 2026 back"
                   width={900}
                   height={600}
                   className="w-full h-auto"
                 />
               </div>
               <p className="text-center text-xs uppercase tracking-widest text-mist">
-                The Newberg Spotlight · April 2026
+                The Newberg Spotlight · July 2026
               </p>
             </div>
           </Reveal>
