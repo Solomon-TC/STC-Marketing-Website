@@ -12,9 +12,14 @@ type Project = {
 
 const PROJECTS: Project[] = [
   {
-    src: "/videos/zd-builders-demo.mp4",
+    src: "/videos/vd1-zd-builders.mp4",
     label: "Z&D Builders",
     caption: "Roofing & Remodeling · Newberg, OR",
+  },
+  {
+    src: "/videos/vd2-well-hung-gutters.mp4",
+    label: "Well Hung Gutters",
+    caption: "Gutter Installation & Maintenance · Corvallis, OR",
   },
 ];
 
