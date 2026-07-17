@@ -7,7 +7,7 @@ const SERVICES = [
     title: "The Spotlights",
     description:
       "One big 9x12\" postcard. Multiple local businesses. 5,000 households. Each business gets its own ad slot and because we only allow one business per industry, there's zero competition on the card.",
-    points: ["Shared postcard, exclusive industry slot", "5,000 households per drop", "Monthly or bi-monthly cadence"],
+    points: ["Shared postcard, exclusive industry slot", "Complimentary ad design included", "Monthly or bi-monthly releases"],
   },
   {
     href: "/website-design",
@@ -25,7 +25,7 @@ export default function ServicesOverview() {
         <Reveal>
           <span className="text-xs uppercase tracking-widest text-pine-light">What we do</span>
           <h2 className="font-display text-balance mt-4 text-4xl text-paper sm:text-5xl max-w-2xl">
-            Built to grow your brand and fill your calendar.
+            Built to grow your brand without taking your time.
           </h2>
         </Reveal>
 

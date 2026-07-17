@@ -105,7 +105,7 @@ export default function Hero() {
             className="mt-14 flex flex-wrap gap-10"
           >
             {[
-              ["Direct Mail", "That gets opened"],
+              ["Direct Mail", "That stands out"],
               ["Websites", "Built to convert"],
               ["Real Results", "For local businesses"],
             ].map(([stat, label]) => (
@@ -162,7 +162,7 @@ export default function Hero() {
             >
               <div className="text-2xl font-display text-paper">5,000</div>
               <div className="text-[10px] uppercase tracking-widest text-mist">
-                Households per drop
+                Households per mailer
               </div>
             </motion.div>
           </motion.div>

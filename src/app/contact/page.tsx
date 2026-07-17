@@ -6,7 +6,7 @@ import ContactForm from "./ContactForm";
 export const metadata: Metadata = {
   title: "Contact | STC Marketing",
   description:
-    "Get in touch with STC Marketing to plan a Spotlights direct mail drop or a new website for your Oregon business.",
+    "Get in touch with STC Marketing to get on a Spotlights mailer or start a new website for your Oregon business.",
 };
 
 const DETAILS = [

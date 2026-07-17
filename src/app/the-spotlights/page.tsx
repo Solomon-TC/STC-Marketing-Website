@@ -23,14 +23,19 @@ const FEATURES = [
       "We only allow one business per industry on every card. If you're the plumber, you're the only plumber. No competing for attention with a rival across the fold.",
   },
   {
-    title: "5,000 households per drop",
+    title: "5,000 households per mailer",
     description:
       "Every Spotlights card reaches 5,000 local households in the target city — real homeowners in your service area, not random impressions.",
   },
   {
-    title: "Monthly or bi-monthly cadence",
+    title: "Monthly or bi-monthly releases",
     description:
-      "Consistency builds familiarity. We run drops on a regular schedule so your business stays in front of the same neighborhoods over time.",
+      "Consistency builds familiarity. We release on a regular schedule so your business stays in front of the same neighborhoods over time.",
+  },
+  {
+    title: "Complimentary ad design",
+    description:
+      "We design your ad for you at no extra cost. Every slot on the card is professionally designed to look cohesive, polished, and on-brand.",
   },
   {
     title: "Top-quality businesses only",
@@ -46,33 +51,34 @@ const FEATURES = [
 
 const SPECS = [
   ["Card size", "9\" x 12\" (oversized)"],
-  ["Households reached", "5,000 per city per drop"],
+  ["Households reached", "5,000 per city per mailer"],
   ["Businesses per card", "Multiple — curated local businesses"],
   ["Industry exclusivity", "One business per industry, per card"],
-  ["Drop frequency", "Monthly or bi-monthly"],
+  ["Release frequency", "Monthly or bi-monthly"],
   ["Ad slot options", "Multiple sizes available — reach out to learn more"],
+  ["Ad design", "Complimentary — included with every slot"],
 ];
 
 const HOW = [
   {
     n: "01",
     title: "We pick a city",
-    body: "Each Spotlights card is built around one city or area. We identify the right 5,000 households and plan the drop schedule.",
+    body: "Each Spotlight is built around one city or area. We identify the right 5,000 households and plan the release schedule.",
   },
   {
     n: "02",
-    title: "Businesses request a slot",
-    body: "Local businesses reach out to see if their industry is available. Once your category is taken, it's taken. First come, first featured.",
+    title: "We fill the slots with top quality local businesses",
+    body: "Local businesses reach out to see if their industry is available. We only accept near-5-star businesses. Once your category is taken, it's taken.",
   },
   {
     n: "03",
-    title: "We design the whole card",
-    body: "Our team designs every ad and lays out the full postcard. One cohesive piece that looks premium from corner to corner.",
+    title: "We design every ad — at no extra cost",
+    body: "Our team designs each business's ad and lays out the full postcard. Complimentary design is included with every slot. One cohesive, premium piece from corner to corner.",
   },
   {
     n: "04",
-    title: "5,000 households get it",
-    body: "The card goes out on schedule — monthly or bi-monthly — keeping every business on it top of mind with local homeowners.",
+    title: "5,000 households receive it",
+    body: "The Spotlight goes out on schedule — monthly or bi-monthly — keeping every business top of mind with local homeowners.",
   },
 ];
 
@@ -186,7 +192,7 @@ export default function SpotlightsPage() {
           <Reveal>
             <span className="text-xs uppercase tracking-widest text-pine-light">The details</span>
             <h2 className="font-display text-balance mt-4 text-3xl text-paper sm:text-4xl">
-              Everything in one drop.
+              Everything in one Spotlight.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>

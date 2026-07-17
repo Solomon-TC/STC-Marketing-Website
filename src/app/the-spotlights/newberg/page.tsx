@@ -184,7 +184,7 @@ export default function NewbergSpotlightPage() {
               {[
                 { title: "Exclusive industry slot", body: "Only one dentist, one roofer, one landscaper — your category is yours alone on every Newberg Spotlight card." },
                 { title: "Near-5-star businesses only", body: "We are selective about who makes it onto the card. The Spotlights represents only the best local businesses — ones the community can trust." },
-                { title: "Monthly or bi-monthly", body: "Regular drops keep your business top of mind with Newberg homeowners all year long." },
+                { title: "Monthly or bi-monthly", body: "Regular releases keep your business top of mind with Newberg homeowners all year long." },
               ].map((item, i) => (
                 <div key={i} className="rounded-xl border border-white/10 bg-ink p-6">
                   <h3 className="text-paper font-medium">{item.title}</h3>
@@ -207,7 +207,7 @@ export default function NewbergSpotlightPage() {
             <p className="mt-5 text-fog max-w-xl mx-auto leading-relaxed">
               Industry slots are exclusive — once your category is taken,
               it&apos;s taken. Get in touch and we&apos;ll let you know if
-              your slot is available and what the next drop looks like.
+              your slot is available and what the next Spotlight looks like.
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <Link
