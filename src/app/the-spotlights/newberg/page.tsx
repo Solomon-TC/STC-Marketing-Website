@@ -8,7 +8,7 @@ import CtaBanner from "@/components/CtaBanner";
 export const metadata: Metadata = {
   title: "The Newberg Spotlight | STC Marketing",
   description:
-    "The Newberg Spotlight is a shared 9×12\" direct mail postcard featuring local Newberg businesses, mailed to 5,000 households in the Newberg, OR area. Powered by STC Marketing.",
+    "The Newberg Spotlight is a shared 9x12\" direct mail postcard featuring local Newberg businesses, mailed to 5,000 households in the Newberg, OR area. Powered by STC Marketing.",
   openGraph: {
     title: "The Newberg Spotlight | STC Marketing",
     description:
@@ -30,7 +30,7 @@ const jsonLd = {
   "@type": "Product",
   name: "The Newberg Spotlight",
   description:
-    "A shared 9×12″ direct mail postcard featuring local Newberg, Oregon businesses, mailed to 5,000 households in the Newberg area on a monthly or bi-monthly schedule.",
+    "A shared 9x12\" direct mail postcard featuring local Newberg, Oregon businesses, mailed to 5,000 households in the Newberg area on a monthly or bi-monthly schedule.",
   brand: {
     "@type": "Brand",
     name: "STC Marketing",
@@ -127,7 +127,7 @@ export default function NewbergSpotlightPage() {
             <div className="mt-10 flex flex-wrap gap-10">
               {[
                 ["5,000", "Newberg households"],
-                ["9×12″", "Oversized format"],
+                ["9x12\"", "Oversized format"],
                 ["1 business", "Per industry"],
               ].map(([stat, label]) => (
                 <div key={label}>
@@ -142,7 +142,7 @@ export default function NewbergSpotlightPage() {
             <div className="space-y-4">
               {[
                 { title: "Exclusive industry slot", body: "Only one dentist, one roofer, one landscaper — your category is yours alone on every Newberg Spotlight card." },
-                { title: "Starts at $200", body: "Ad slots start at just $200 — that's $0.04 per household. Shared cost means premium reach at a fraction of a solo campaign." },
+                { title: "Near-5-star businesses only", body: "We are selective about who makes it onto the card. The Spotlights represents only the best local businesses — ones the community can trust." },
                 { title: "Monthly or bi-monthly", body: "Regular drops keep your business top of mind with Newberg homeowners all year long." },
               ].map((item, i) => (
                 <div key={i} className="rounded-xl border border-white/10 bg-ink p-6">
@@ -159,21 +159,21 @@ export default function NewbergSpotlightPage() {
       <section className="bg-ink py-24 lg:py-32 border-t border-white/5">
         <div className="mx-auto max-w-3xl px-6 lg:px-10 text-center">
           <Reveal>
-            <span className="text-xs uppercase tracking-widest text-pine-light">Get on the next card</span>
+            <span className="text-xs uppercase tracking-widest text-pine-light">Interested in the next card?</span>
             <h2 className="font-display text-balance mt-4 text-3xl text-paper sm:text-4xl">
-              Claim your industry slot on the Newberg Spotlight.
+              Reach out to see if we can get you on the Newberg Spotlight.
             </h2>
             <p className="mt-5 text-fog max-w-xl mx-auto leading-relaxed">
               Industry slots are exclusive — once your category is taken,
-              it&apos;s taken. Reach out now to reserve your spot on the next
-              Newberg Spotlight drop.
+              it&apos;s taken. Get in touch and we&apos;ll let you know if
+              your slot is available and what the next drop looks like.
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-4">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center rounded-full bg-pine-light px-8 py-3.5 text-sm uppercase tracking-wide text-ink transition-transform duration-300 hover:scale-[1.03] hover:bg-pine"
               >
-                Claim My Slot
+                Request an Inquiry
               </Link>
               <Link
                 href="/the-spotlights"

@@ -8,14 +8,14 @@ import CtaBanner from "@/components/CtaBanner";
 export const metadata: Metadata = {
   title: "The Spotlights | STC Marketing",
   description:
-    "The Spotlights is a shared 9×12\" postcard featuring multiple local businesses, mailed to 5,000 households per city. One business per industry — your slot, exclusively yours.",
+    "The Spotlights is a shared 9x12\" postcard featuring multiple local businesses, mailed to 5,000 households per city. One business per industry — your slot, exclusively yours.",
 };
 
 const FEATURES = [
   {
     title: "Shared postcard, shared cost",
     description:
-      "Multiple local businesses share one oversized card — so each business gets premium direct mail exposure at a fraction of what a solo campaign would cost. Ad slots start at just $200, which works out to only $0.04 per household.",
+      "Multiple local businesses share one oversized card so each business gets premium direct mail exposure at a fraction of what a solo campaign would cost.",
   },
   {
     title: "One business per industry",
@@ -33,24 +33,24 @@ const FEATURES = [
       "Consistency builds familiarity. We run drops on a regular schedule so your business stays in front of the same neighborhoods over time.",
   },
   {
-    title: "Ad slots sized to your goals",
+    title: "Top-quality businesses only",
     description:
-      "Choose the slot size that fits your budget and your message — from a compact presence to a headline-grabbing feature spot on the card.",
+      "We are selective about who we feature. The Spotlights is reserved for businesses with near-5-star reputations — because every name on the card reflects on all the others.",
   },
   {
-    title: "Oversized 9×12″ format",
+    title: "Oversized 9x12\" format",
     description:
       "Nearly double the size of a standard postcard. It's the first thing people pull out of the mailbox, and the last thing they toss without reading.",
   },
 ];
 
 const SPECS = [
-  ["Card size", "9″ × 12″ (oversized)"],
+  ["Card size", "9\" x 12\" (oversized)"],
   ["Households reached", "5,000 per city per drop"],
   ["Businesses per card", "Multiple — curated local businesses"],
   ["Industry exclusivity", "One business per industry, per card"],
   ["Drop frequency", "Monthly or bi-monthly"],
-  ["Ad slot options", "Multiple sizes available — ask for a media kit"],
+  ["Ad slot options", "Multiple sizes available — reach out to learn more"],
 ];
 
 const HOW = [
@@ -61,8 +61,8 @@ const HOW = [
   },
   {
     n: "02",
-    title: "Businesses claim their slot",
-    body: "Local businesses buy an ad slot — sized to their goals. Once your industry is taken, it's taken. First come, first featured.",
+    title: "Businesses request a slot",
+    body: "Local businesses reach out to see if their industry is available. Once your category is taken, it's taken. First come, first featured.",
   },
   {
     n: "03",
@@ -80,17 +80,15 @@ export default function SpotlightsPage() {
   return (
     <>
       <PageHero
-        eyebrow="Core Service"
         title={
           <>
             Your business. 5,000 households.
             <span className="text-tan italic"> Zero competition.</span>
           </>
         }
-        description="The Spotlights is a shared 9×12″ postcard featuring multiple local businesses — each with their own exclusive industry slot — mailed to 5,000 households per city on a monthly or bi-monthly schedule."
+        description="The Spotlights is a shared 9x12\" postcard featuring multiple local businesses — each with their own exclusive industry slot — mailed to 5,000 households per city on a monthly or bi-monthly schedule."
       />
 
-      {/* How it works */}
       {/* Newberg callout */}
       <section className="bg-charcoal py-14 border-b border-white/5">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
@@ -206,7 +204,7 @@ export default function SpotlightsPage() {
               href="/contact"
               className="inline-flex items-center justify-center rounded-full bg-pine-light px-8 py-3.5 text-sm uppercase tracking-wide text-ink transition-transform duration-300 hover:scale-[1.03] hover:bg-pine"
             >
-              Claim Your Industry Slot
+              Request an Inquiry
             </Link>
           </Reveal>
         </div>

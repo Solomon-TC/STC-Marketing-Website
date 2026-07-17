@@ -62,9 +62,9 @@ export default function Hero() {
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
             className="font-display text-balance text-5xl leading-[1.05] text-paper sm:text-6xl lg:text-7xl"
           >
-            Be the business
-            <span className="text-tan italic"> everyone </span>
-            in town knows.
+            Marketing that
+            <span className="text-tan italic"> works, </span>
+            without the guesswork.
           </motion.h1>
 
           <motion.p
@@ -74,7 +74,7 @@ export default function Hero() {
             className="mt-6 max-w-lg text-lg text-fog leading-relaxed"
           >
             STC Marketing creates direct mail campaigns and high-end websites
-            built to get your business noticed, remembered, and chosen — not
+            built to get your business noticed, remembered, and chosen. Not
             just seen.
           </motion.p>
 
@@ -105,12 +105,12 @@ export default function Hero() {
             className="mt-14 flex flex-wrap gap-10"
           >
             {[
-              ["9x12\"", "Oversized format"],
-              ["5,000", "Households per drop"],
-              ["1 business", "Per industry on each card"],
+              ["Direct Mail", "That gets opened"],
+              ["Websites", "Built to convert"],
+              ["Real Results", "For local businesses"],
             ].map(([stat, label]) => (
               <div key={label}>
-                <div className="font-display text-3xl text-paper">{stat}</div>
+                <div className="font-display text-2xl text-paper">{stat}</div>
                 <div className="text-xs uppercase tracking-widest text-mist mt-1">
                   {label}
                 </div>
@@ -148,7 +148,7 @@ export default function Hero() {
               {/* subtle label overlay */}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/70 to-transparent px-5 py-4">
                 <span className="text-[10px] uppercase tracking-[0.25em] text-pine-light">
-                  The Newberg Spotlight &mdash; April 2026
+                  The Newberg Spotlight · April 2026
                 </span>
               </div>
             </div>

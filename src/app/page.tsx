@@ -1,6 +1,5 @@
 import Hero from "@/components/Hero";
 import ServicesOverview from "@/components/ServicesOverview";
-import HowItWorks from "@/components/HowItWorks";
 import PortfolioCarousel from "@/components/PortfolioCarousel";
 import CtaBanner from "@/components/CtaBanner";
 
@@ -9,7 +8,6 @@ export default function Home() {
     <>
       <Hero />
       <ServicesOverview />
-      <HowItWorks />
       <PortfolioCarousel />
       <CtaBanner />
     </>

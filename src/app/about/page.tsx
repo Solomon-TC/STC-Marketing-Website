@@ -15,7 +15,7 @@ const VALUES = [
   {
     title: "Community over competition",
     description:
-      "The Spotlights puts multiple businesses on one card — because we believe local businesses grow stronger when they lift each other up, not when they undercut each other.",
+      "The Spotlights puts multiple businesses on one card, because we believe local businesses grow stronger when they lift each other up, not when they undercut each other.",
   },
   {
     title: "Craft, not shortcuts",
@@ -101,33 +101,6 @@ export default function AboutPage() {
               </div>
             </Reveal>
           </div>
-        </div>
-      </section>
-
-      <section className="bg-charcoal py-24 lg:py-32 border-t border-white/5">
-        <div className="mx-auto max-w-4xl px-6 lg:px-10">
-          <Reveal>
-            <span className="text-xs uppercase tracking-widest text-pine-light">Our story</span>
-            <h2 className="font-display text-balance mt-4 text-3xl text-paper sm:text-4xl">
-              Marketing that respects the customer&apos;s mailbox &mdash; and your budget.
-            </h2>
-            <div className="mt-6 space-y-5 text-fog leading-relaxed">
-              <p>
-                STC Marketing started with a simple observation: most local
-                advertising is either ignored online or thrown away in the
-                mailbox. We set out to build something that couldn&apos;t be
-                ignored &mdash; The Spotlights, an oversized postcard sized
-                and designed to earn a second look.
-              </p>
-              <p>
-                As more of our clients asked us to help with their websites
-                too, we expanded into web design &mdash; applying the same
-                standard of craft to the page someone lands on after they
-                scan that postcard. Today we help Oregon businesses show up
-                consistently, in the mailbox and online.
-              </p>
-            </div>
-          </Reveal>
         </div>
       </section>
 

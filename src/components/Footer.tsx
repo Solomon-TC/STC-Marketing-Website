@@ -19,7 +19,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-sm text-mist leading-relaxed max-w-xs">
-            Local advertising for Oregon businesses — oversized direct mail
+            Local advertising for Oregon businesses. Oversized direct mail
             and modern websites that get you found.
           </p>
         </div>
@@ -36,7 +36,7 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/website-design" className="hover:text-pine-light transition-colors">
-                Website Design
+                Websites
               </Link>
             </li>
           </ul>

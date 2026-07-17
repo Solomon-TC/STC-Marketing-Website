@@ -5,9 +5,9 @@ import CtaBanner from "@/components/CtaBanner";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 
 export const metadata: Metadata = {
-  title: "Website Design | STC Marketing",
+  title: "Websites | STC Marketing",
   description:
-    "Custom, high-end website design for Oregon businesses — fast, mobile-first, and built to turn visitors into customers.",
+    "Custom, high-end websites for local businesses — designed, built, hosted, and managed by STC Marketing so you can focus on running your business.",
 };
 
 const PROCESS = [
@@ -31,33 +31,33 @@ const PROCESS = [
   },
   {
     n: "04",
-    title: "Launch & grow",
+    title: "Manage and support",
     description:
-      "We launch, connect it to your Spotlights mailer, and help you keep improving from there.",
+      "We handle hosting, updates, security, and ongoing support after launch so you never have to think about it.",
   },
 ];
 
 const INCLUDES = [
   "Custom design — no templates",
   "Mobile-first, responsive layouts",
-  "Sub-2 second load times",
-  "On-page SEO & real meta tags",
-  "Accessible, semantic markup",
-  "Ongoing support after launch",
+  "Fast load times",
+  "On-page SEO and real meta tags",
+  "Hosting and domain management",
+  "Security and software updates",
+  "Ongoing support and peace of mind",
 ];
 
 export default function WebsiteDesignPage() {
   return (
     <>
       <PageHero
-        eyebrow="Secondary Service"
         title={
           <>
             Websites built to
             <span className="text-tan italic"> convert attention.</span>
           </>
         }
-        description="A high-end, modern website turns the attention your Spotlights mailer creates into booked calls and walk-in customers."
+        description="A high-end, modern website that looks great and keeps working long after launch. We design, build, host, and manage everything so you can focus on your business."
       />
 
       <section className="bg-ink px-6 lg:px-10">
@@ -78,18 +78,19 @@ export default function WebsiteDesignPage() {
               Why it matters
             </span>
             <h2 className="font-display text-balance mt-4 text-3xl text-paper sm:text-4xl">
-              Your mailer earns the click. Your site has to earn the sale.
+              Your website should work as hard as you do.
             </h2>
             <p className="mt-5 text-fog leading-relaxed">
-              A Spotlight gets someone curious enough to scan a code or
-              search your name. What happens next decides whether that
-              curiosity turns into a customer — and a generic, slow, or
-              outdated website loses that moment instantly.
+              Most small business websites are slow, outdated, or built on
+              a template that looks like everyone else. When someone looks
+              you up, that first impression decides whether they call or
+              keep scrolling.
             </p>
             <p className="mt-4 text-fog leading-relaxed">
-              We design and build sites with the same care as the mailer
-              itself: a clear point of view, real typography, and layouts
-              that feel considered on every device.
+              We build sites that look the part and stay that way. After
+              launch we handle hosting, security, and updates so your site
+              stays fast, secure, and current without you having to lift
+              a finger.
             </p>
           </Reveal>
 

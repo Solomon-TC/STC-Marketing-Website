@@ -8,7 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const NAV_LINKS = [
   { href: "/the-spotlights", label: "The Spotlights" },
-  { href: "/website-design", label: "Website Design" },
+  { href: "/website-design", label: "Websites" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
@@ -30,6 +30,12 @@ export default function Header() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  function handleNavClick(href: string) {
+    if (pathname === href) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }
 
   return (
     <header
@@ -59,6 +65,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
+              onClick={() => handleNavClick(link.href)}
               className={`text-sm tracking-wide uppercase transition-colors relative ${
                 pathname === link.href
                   ? "text-pine-light"
@@ -112,6 +119,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
+                  onClick={() => handleNavClick(link.href)}
                   className={`text-base uppercase tracking-wide ${
                     pathname === link.href ? "text-pine-light" : "text-fog"
                   }`}

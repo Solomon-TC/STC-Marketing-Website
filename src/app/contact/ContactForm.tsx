@@ -23,7 +23,7 @@ export default function ContactForm() {
               Message sent
             </span>
             <h3 className="font-display mt-3 text-2xl text-paper">
-              Thanks &mdash; we&apos;ll be in touch shortly.
+              Thanks, we&apos;ll be in touch shortly.
             </h3>
             <p className="mt-2 text-sm text-mist max-w-sm">
               A member of the STC Marketing team will reach out within one
@@ -54,7 +54,7 @@ export default function ContactForm() {
               <select
                 name="interest"
                 className="w-full rounded-lg border border-white/15 bg-ink px-4 py-3 text-paper focus:border-pine-light focus:outline-none focus:ring-1 focus:ring-pine-light"
-                defaultValue="spotlights"
+                defaultValue="website"
               >
                 <option value="spotlights">The Spotlights (direct mail)</option>
                 <option value="website">Website Design</option>

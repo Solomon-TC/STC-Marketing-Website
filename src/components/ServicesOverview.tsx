@@ -4,19 +4,17 @@ import Reveal from "./Reveal";
 const SERVICES = [
   {
     href: "/the-spotlights",
-    eyebrow: "Core Service",
     title: "The Spotlights",
     description:
-      "One big 9×12″ postcard. Multiple local businesses. 5,000 households. Each business gets its own ad slot — and because we only allow one business per industry, there's zero competition on the card.",
+      "One big 9x12\" postcard. Multiple local businesses. 5,000 households. Each business gets its own ad slot and because we only allow one business per industry, there's zero competition on the card.",
     points: ["Shared postcard, exclusive industry slot", "5,000 households per drop", "Monthly or bi-monthly cadence"],
   },
   {
     href: "/website-design",
-    eyebrow: "Secondary Service",
-    title: "Website Design",
+    title: "Websites",
     description:
-      "Modern, fast, high-end websites built to convert the attention your mailer creates into booked calls and walk-in customers.",
-    points: ["Custom design, no templates", "Mobile-first builds", "Built for speed & SEO"],
+      "Modern, high-end websites built to convert. We handle the design, build, hosting, and everything after launch so you never have to think about it.",
+    points: ["Custom design, no templates", "Hosting, updates, and security included", "Ongoing support and peace of mind"],
   },
 ];
 
@@ -38,9 +36,6 @@ export default function ServicesOverview() {
                 href={service.href}
                 className="group relative block h-full rounded-2xl border border-white/10 bg-charcoal p-10 transition-colors duration-300 hover:border-pine-light/40"
               >
-                <span className="text-xs uppercase tracking-widest text-mist">
-                  {service.eyebrow}
-                </span>
                 <h3 className="font-display mt-3 text-3xl text-paper group-hover:text-pine-light transition-colors duration-300">
                   {service.title}
                 </h3>

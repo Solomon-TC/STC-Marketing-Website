@@ -15,18 +15,14 @@ export default function CtaBanner() {
       <div className="relative mx-auto max-w-4xl px-6 lg:px-10 text-center">
         <Reveal>
           <h2 className="font-display text-balance text-4xl text-paper sm:text-5xl">
-            Ready to fill your mailboxes &mdash; and your calendar?
+            Are you ready to take your business to the next level?
           </h2>
-          <p className="mt-5 text-lg text-fog max-w-xl mx-auto">
-            Tell us about your business and your service area. We&apos;ll map
-            out a Spotlights drop built around your goals.
-          </p>
           <div className="mt-9 flex flex-wrap justify-center gap-4">
             <Link
               href="/contact"
               className="inline-flex items-center justify-center rounded-full bg-pine-light px-8 py-3.5 text-sm uppercase tracking-wide text-ink transition-transform duration-300 hover:scale-[1.03] hover:bg-pine"
             >
-              Start a Project
+              Get in touch
             </Link>
           </div>
         </Reveal>
