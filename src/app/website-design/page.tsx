@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CtaBanner from "@/components/CtaBanner";
-import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 
 export const metadata: Metadata = {
   title: "Websites | STC Marketing",
@@ -63,10 +62,21 @@ export default function WebsiteDesignPage() {
       <section className="bg-ink px-6 lg:px-10">
         <div className="mx-auto max-w-6xl">
           <Reveal>
-            <PhotoPlaceholder
-              label="Project showcase coming soon"
-              className="aspect-[16/9] w-full rounded-2xl border border-white/10"
-            />
+            <div className="relative w-full rounded-2xl border border-white/10 overflow-hidden shadow-2xl shadow-black/60">
+              <video
+                src="/videos/zd-builders-demo.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-auto"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/70 to-transparent px-5 py-4">
+                <span className="text-[10px] uppercase tracking-[0.25em] text-pine-light">
+                  Z&amp;D Builders · Website Design
+                </span>
+              </div>
+            </div>
           </Reveal>
         </div>
       </section>
