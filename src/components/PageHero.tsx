@@ -5,7 +5,7 @@ export default function PageHero({
   title,
   description,
 }: {
-  eyebrow: string;
+  eyebrow?: string;
   title: React.ReactNode;
   description: string;
 }) {
@@ -17,7 +17,7 @@ export default function PageHero({
       />
       <div className="relative mx-auto max-w-4xl px-6 lg:px-10 text-center">
         <Reveal>
-          <span className="text-xs uppercase tracking-widest text-pine-light">{eyebrow}</span>
+          {eyebrow && <span className="text-xs uppercase tracking-widest text-pine-light">{eyebrow}</span>}
           <h1 className="font-display text-balance mt-4 text-4xl text-paper sm:text-6xl">
             {title}
           </h1>
