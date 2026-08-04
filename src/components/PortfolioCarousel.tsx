@@ -1,152 +1,206 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useState, useRef, useEffect } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import Reveal from "./Reveal";
-import PhotoPlaceholder from "./PhotoPlaceholder";
 
-type Slide = {
-  type: "image" | "photo";
-  label: string;
-  caption?: string;
-  src?: string;
-};
-
-const SLIDES: Slide[] = [
+const SLIDES = [
   {
-    type: "image",
+    src: "/images/spotlight-july-front.png",
     label: "The Newberg Spotlight - July Front",
     caption: "July 2026 · Newberg, OR · 5,000 households",
-    src: "/images/spotlight-july-front.png",
+    href: "/the-spotlights",
   },
   {
-    type: "image",
+    src: "/images/spotlight-july-back.png",
     label: "The Newberg Spotlight - July Back",
     caption: "July 2026 · Newberg, OR · featuring local businesses",
-    src: "/images/spotlight-july-back.png",
+    href: "/the-spotlights",
   },
   {
-    type: "image",
+    src: "/images/spotlight-front.png",
     label: "The Newberg Spotlight - April Front",
     caption: "April 2026 · Newberg, OR · 5,000 households",
-    src: "/images/spotlight-front.png",
+    href: "/the-spotlights",
   },
   {
-    type: "image",
+    src: "/images/spotlight-back.png",
     label: "The Newberg Spotlight - April Back",
     caption: "April 2026 · Newberg, OR · featuring local businesses",
-    src: "/images/spotlight-back.png",
+    href: "/the-spotlights",
   },
   {
-    type: "image",
+    src: "/images/corvo-spotlight.png",
     label: "The Corvo Spotlight - Card 1",
     caption: "Corvo, OR · Efficient Roofing · Country Financial",
-    src: "/images/corvo-spotlight.png",
+    href: "/the-spotlights",
+  },
+  {
+    src: "/images/website-zd-builders.png",
+    label: "Z&D Builders",
+    caption: "Roofing & Remodeling · Newberg, OR",
+    href: "/website-design",
+  },
+  {
+    src: "/images/website-valley-boys.png",
+    label: "Valley Boy's Window & Gutter",
+    caption: "Window & Gutter Cleaning · Newberg, OR",
+    href: "/website-design",
+  },
+  {
+    src: "/images/website-well-hung-gutters.png",
+    label: "Well Hung Gutters",
+    caption: "Gutter Installation & Maintenance · Corvallis, OR",
+    href: "/website-design",
   },
 ];
 
+type CardPos = "left" | "center" | "right" | "hidden";
+
+const FAN: Record<CardPos, { rotate: number; scale: number; opacity: number; zIndex: number }> = {
+  left:   { rotate: -20, scale: 0.78, opacity: 0.55, zIndex: 0 },
+  center: { rotate:   0, scale: 1,    opacity: 1,    zIndex: 2 },
+  right:  { rotate:  20, scale: 0.78, opacity: 0.55, zIndex: 0 },
+  hidden: { rotate:   0, scale: 0.78, opacity: 0,    zIndex: -1 },
+};
+
+function getPos(i: number, active: number, total: number): CardPos {
+  const diff = ((i - active) + total) % total;
+  if (diff === 0) return "center";
+  if (diff === 1) return "right";
+  if (diff === total - 1) return "left";
+  return "hidden";
+}
+
 export default function PortfolioCarousel() {
-  const [index, setIndex] = useState(0);
-  const paused = useRef(false);
+  const [active, setActive] = useState(0);
+  const touchStartX = useRef<number | null>(null);
+  const n = SLIDES.length;
 
   useEffect(() => {
-    const id = setInterval(() => {
-      if (!paused.current) {
-        setIndex((i) => (i + 1) % SLIDES.length);
-      }
-    }, 4000);
-    return () => clearInterval(id);
-  }, []);
+    const t = setInterval(() => setActive(a => (a + 1) % n), 4000);
+    return () => clearInterval(t);
+  }, [n]);
 
-  function go(delta: number) {
-    setIndex((i) => (i + delta + SLIDES.length) % SLIDES.length);
-  }
+  const go = (next: number) => setActive(((next % n) + n) % n);
 
-  const slide = SLIDES[index];
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    const dx = e.changedTouches[0].clientX - touchStartX.current;
+    if (Math.abs(dx) > 48) go(dx < 0 ? active + 1 : active - 1);
+    touchStartX.current = null;
+  };
 
   return (
-    <section className="bg-charcoal py-24 lg:py-32 border-t border-white/5">
+    <section className="bg-charcoal py-24 lg:py-32 border-t border-white/5" style={{ overflow: "clip" }}>
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
-        <div className="flex items-end justify-between flex-wrap gap-6">
-          <Reveal>
-            <span className="text-xs uppercase tracking-widest text-pine-light">
-              Recent work
-            </span>
-            <h2 className="font-display text-balance mt-4 text-4xl text-paper sm:text-5xl max-w-2xl">
-              Refined, considered, on-brand.
-            </h2>
-          </Reveal>
+        <Reveal>
+          <span className="text-xs uppercase tracking-widest text-pine-light">Recent work</span>
+          <h2 className="font-display text-balance mt-4 text-4xl text-paper sm:text-5xl max-w-2xl">
+            Refined, considered, on-brand.
+          </h2>
+        </Reveal>
 
-          <div className="flex items-center gap-3">
-            <button
-              type="button"
-              aria-label="Previous"
-              onClick={() => go(-1)}
-              className="cursor-pointer flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-paper transition-colors hover:border-pine-light hover:text-pine-light"
-            >
-              &larr;
-            </button>
-            <button
-              type="button"
-              aria-label="Next"
-              onClick={() => go(1)}
-              className="cursor-pointer flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-paper transition-colors hover:border-pine-light hover:text-pine-light"
-            >
-              &rarr;
-            </button>
-          </div>
-        </div>
-
+        {/* Fan */}
         <div
-          className="mt-12 relative aspect-[16/10] sm:aspect-[16/8] w-full overflow-hidden rounded-2xl border border-white/10"
-          onMouseEnter={() => { paused.current = true; }}
-          onMouseLeave={() => { paused.current = false; }}
+          className="mt-16 relative w-full"
+          style={{ height: "clamp(160px, 36vw, 440px)" }}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
         >
-          <AnimatePresence mode="wait" initial={false}>
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, x: 24 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -24 }}
-              transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute inset-0"
-            >
-              {slide.type === "photo" ? (
-                <PhotoPlaceholder label={slide.label} className="h-full w-full" />
-              ) : (
-                <div className="relative h-full w-full">
+          {SLIDES.map((slide, i) => {
+            const pos = getPos(i, active, n);
+            const cfg = FAN[pos];
+            const isCenter = pos === "center";
+
+            return (
+              <motion.div
+                key={i}
+                animate={{ rotate: cfg.rotate, scale: cfg.scale, opacity: cfg.opacity }}
+                style={{
+                  position: "absolute",
+                  bottom: 0,
+                  left: "50%",
+                  x: "-50%",
+                  width: "clamp(220px, 58vw, 660px)",
+                  transformOrigin: "bottom center",
+                  zIndex: cfg.zIndex,
+                  cursor: !isCenter ? "pointer" : slide.href ? "pointer" : "default",
+                }}
+                transition={{ type: "spring", stiffness: 260, damping: 28 }}
+                onClick={() => !isCenter && go(i)}
+                className="rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-black/70"
+              >
+                <div className="relative bg-ink" style={{ aspectRatio: "16 / 9" }}>
+                  {/* Invisible link overlay on center card */}
+                  {isCenter && slide.href && (
+                    <Link
+                      href={slide.href}
+                      className="absolute inset-0 z-10"
+                      aria-label={`View ${slide.label}`}
+                    />
+                  )}
+
                   <Image
-                    src={slide.src!}
+                    src={slide.src}
                     alt={slide.label}
                     fill
                     className="object-contain"
-                    sizes="(max-width: 768px) 100vw, 80vw"
+                    sizes="(max-width: 768px) 100vw, 70vw"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/80 to-transparent px-6 py-4">
-                    <p className="text-xs uppercase tracking-widest text-pine-light">{slide.label}</p>
-                    {slide.caption && (
-                      <p className="text-[11px] text-mist mt-0.5">{slide.caption}</p>
-                    )}
+
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/80 to-transparent px-4 py-3 pointer-events-none">
+                    <p className="text-[10px] uppercase tracking-[0.22em] text-pine-light leading-none">
+                      {slide.label}{isCenter && slide.href ? " →" : ""}
+                    </p>
+                    <p className="text-[10px] text-mist mt-1 leading-none">
+                      {slide.caption}
+                    </p>
                   </div>
                 </div>
-              )}
-            </motion.div>
-          </AnimatePresence>
+              </motion.div>
+            );
+          })}
         </div>
 
-        <div className="mt-6 flex justify-center gap-2">
-          {SLIDES.map((s, i) => (
-            <button
-              key={i}
-              type="button"
-              aria-label={`Go to slide ${i + 1}`}
-              onClick={() => setIndex(i)}
-              className={`cursor-pointer h-1.5 rounded-full transition-all duration-300 ${
-                i === index ? "w-6 bg-pine-light" : "w-1.5 bg-white/20"
-              }`}
-            />
-          ))}
+        {/* Navigation */}
+        <div className="mt-8 flex justify-center items-center gap-4">
+          <button
+            type="button"
+            aria-label="Previous slide"
+            onClick={() => go(active - 1)}
+            className="cursor-pointer flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-paper hover:border-pine-light hover:text-pine-light transition-colors duration-200"
+          >
+            &larr;
+          </button>
+
+          <div className="flex items-center gap-2">
+            {SLIDES.map((_, i) => (
+              <button
+                key={i}
+                type="button"
+                aria-label={`View slide ${i + 1}`}
+                onClick={() => go(i)}
+                className={`cursor-pointer h-1.5 rounded-full transition-all duration-300 ${
+                  i === active ? "w-6 bg-pine-light" : "w-1.5 bg-white/20"
+                }`}
+              />
+            ))}
+          </div>
+
+          <button
+            type="button"
+            aria-label="Next slide"
+            onClick={() => go(active + 1)}
+            className="cursor-pointer flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-paper hover:border-pine-light hover:text-pine-light transition-colors duration-200"
+          >
+            &rarr;
+          </button>
         </div>
       </div>
     </section>
