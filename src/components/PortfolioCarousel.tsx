@@ -109,7 +109,7 @@ export default function PortfolioCarousel() {
         {/* Fan */}
         <div
           className="mt-16 relative w-full"
-          style={{ height: "clamp(160px, 36vw, 440px)" }}
+          style={{ height: "clamp(190px, 57vw, 600px)" }}
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
@@ -127,7 +127,7 @@ export default function PortfolioCarousel() {
                   bottom: 0,
                   left: "50%",
                   x: "-50%",
-                  width: "clamp(220px, 58vw, 660px)",
+                  width: "clamp(300px, 88vw, 960px)",
                   transformOrigin: "bottom center",
                   zIndex: cfg.zIndex,
                   cursor: !isCenter ? "pointer" : slide.href ? "pointer" : "default",

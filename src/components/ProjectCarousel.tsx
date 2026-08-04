@@ -84,7 +84,7 @@ export default function ProjectCarousel() {
         {/* Fan */}
         <div
           className="relative w-full"
-          style={{ height: "clamp(160px, 36vw, 440px)" }}
+          style={{ height: "clamp(190px, 57vw, 600px)" }}
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
@@ -102,7 +102,7 @@ export default function ProjectCarousel() {
                   bottom: 0,
                   left: "50%",
                   x: "-50%",
-                  width: "clamp(220px, 58vw, 660px)",
+                  width: "clamp(300px, 88vw, 960px)",
                   transformOrigin: "bottom center",
                   zIndex: cfg.zIndex,
                   cursor: isCenter ? "default" : "pointer",
