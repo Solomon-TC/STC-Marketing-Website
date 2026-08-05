@@ -39,3 +39,23 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Loose asset files in project root (not for deployment)
+[0-9].png
+abu*.jpg
+df48acdd*.png
+"The Corvo Spotlight*"
+"The Newberg Spotlight*"
+"VBW Video Demo*"
+VD1.mp4
+"WHG Video Demo*"
+
+# Claude Code internals
+.claude/
+
+# Local skill definitions
+skills/
+
+# Python cache
+**/__pycache__/
+*.pyc
