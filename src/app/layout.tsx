@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 const fraunces = Fraunces({
   variable: "--font-fraunces",
   subsets: ["latin"],
-  axes: ["opsz", "SOFT", "WONK"],
+  axes: ["opsz"],
   weight: "variable",
 });
 
@@ -30,21 +30,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
     url: "https://stcmarketingco.com",
-    images: [
-      {
-        url: "https://stcmarketingco.com/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "The Newberg Spotlight — STC Marketing direct mail postcard",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "STC Marketing | Direct Mail & Web Design in Oregon",
     description:
       "Local advertising that actually gets seen. Oversized postcard mailers and modern websites for Oregon businesses.",
-    images: ["https://stcmarketingco.com/og-image.png"],
   },
 };
 

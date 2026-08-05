@@ -120,7 +120,7 @@ export default function PortfolioCarousel() {
 
             return (
               <motion.div
-                key={i}
+                key={slide.src}
                 animate={{ rotate: cfg.rotate, scale: cfg.scale, opacity: cfg.opacity }}
                 style={{
                   position: "absolute",
@@ -146,13 +146,15 @@ export default function PortfolioCarousel() {
                     />
                   )}
 
-                  <Image
-                    src={slide.src}
-                    alt={slide.label}
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 100vw, 70vw"
-                  />
+                  {pos !== "hidden" && (
+                    <Image
+                      src={slide.src}
+                      alt={slide.label}
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 100vw, 70vw"
+                    />
+                  )}
 
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/80 to-transparent px-4 py-3 pointer-events-none">
                     <p className="text-[10px] uppercase tracking-[0.22em] text-pine-light leading-none">

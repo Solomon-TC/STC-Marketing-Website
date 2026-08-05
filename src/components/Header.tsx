@@ -16,13 +16,12 @@ const NAV_LINKS = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [lastPathname, setLastPathname] = useState<string | null>(null);
   const pathname = usePathname();
 
-  if (pathname !== lastPathname) {
-    setLastPathname(pathname);
+  useEffect(() => {
     if (menuOpen) setMenuOpen(false);
-  }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);

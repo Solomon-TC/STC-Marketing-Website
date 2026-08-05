@@ -2,52 +2,10 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect, useRef, useCallback } from "react";
-import { motion, useAnimation, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { useMotionValue, useSpring, useTransform, motion } from "framer-motion";
 import type { PointerEvent } from "react";
 
-const SLIDES = [
-  { src: "/images/spotlight-july-front.png",  alt: "The Newberg Spotlight — July 2026 front",  label: "The Newberg Spotlight · July 2026"  },
-  { src: "/images/spotlight-july-back.png",   alt: "The Newberg Spotlight — July 2026 back",   label: "The Newberg Spotlight · July 2026"  },
-  { src: "/images/spotlight-front.png",       alt: "The Newberg Spotlight — April 2026 front", label: "The Newberg Spotlight · April 2026" },
-  { src: "/images/spotlight-back.png",        alt: "The Newberg Spotlight — April 2026 back",  label: "The Newberg Spotlight · April 2026" },
-];
-
 export default function Hero() {
-  const [displayIdx, setDisplayIdx] = useState(0);
-  const controls = useAnimation();
-  const isFlipping = useRef(false);
-  const nextIdx = useRef(1);
-
-  const doFlip = useCallback(async () => {
-    if (isFlipping.current) return;
-    isFlipping.current = true;
-
-    // Phase 1: fold the card away to edge-on (easeIn — card accelerates away)
-    await controls.start({
-      rotateY: 90,
-      transition: { duration: 0.28, ease: [0.4, 0, 1, 0.6] },
-    });
-
-    // Card is now edge-on (invisible). Swap the image and jump to the opposite edge.
-    setDisplayIdx(nextIdx.current);
-    nextIdx.current = (nextIdx.current + 1) % SLIDES.length;
-    controls.set({ rotateY: -90 });
-
-    // Phase 2: unfold the new face into view (easeOut — card decelerates into place)
-    await controls.start({
-      rotateY: 0,
-      transition: { duration: 0.28, ease: [0, 0.4, 0.6, 1] },
-    });
-
-    isFlipping.current = false;
-  }, [controls]);
-
-  useEffect(() => {
-    const t = setInterval(doFlip, 4000);
-    return () => clearInterval(t);
-  }, [doFlip]);
-
   const mx = useMotionValue(0);
   const my = useMotionValue(0);
   const tiltX = useSpring(useTransform(my, [-0.5, 0.5], [8, -8]), { stiffness: 150, damping: 20 });
@@ -59,8 +17,6 @@ export default function Hero() {
     my.set((e.clientY - r.top) / r.height - 0.5);
   }
   function onPointerLeave() { mx.set(0); my.set(0); }
-
-  const slide = SLIDES[displayIdx];
 
   return (
     <section className="relative overflow-hidden bg-ink grain pt-32 pb-24 lg:pt-44 lg:pb-32">
@@ -142,7 +98,7 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Postcard — physical card flip */}
+        {/* Postcard */}
         <motion.div
           initial={{ opacity: 0, scale: 0.92, y: 30 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -160,14 +116,10 @@ export default function Hero() {
             className="relative"
           >
             <motion.div style={{ rotateX: tiltX, rotateY: tiltY }}>
-              {/* The card that physically flips */}
-              <motion.div
-                animate={controls}
-                className="relative aspect-[4/3] w-full rounded-2xl border border-white/10 shadow-2xl shadow-black/60 overflow-hidden"
-              >
+              <div className="relative aspect-[4/3] w-full rounded-2xl border border-white/10 shadow-2xl shadow-black/60 overflow-hidden">
                 <Image
-                  src={slide.src}
-                  alt={slide.alt}
+                  src="/images/spotlight-july-front.png"
+                  alt="The Newberg Spotlight — July 2026"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -175,10 +127,10 @@ export default function Hero() {
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/70 to-transparent px-5 py-4 pointer-events-none">
                   <span className="text-[10px] uppercase tracking-[0.25em] text-pine-light">
-                    {slide.label}
+                    The Newberg Spotlight · July 2026
                   </span>
                 </div>
-              </motion.div>
+              </div>
             </motion.div>
           </div>
         </motion.div>

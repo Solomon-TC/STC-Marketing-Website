@@ -57,8 +57,9 @@ export default function ProjectCarousel() {
     videoRefs.current.forEach((vid, i) => {
       if (!vid) return;
       if (i === idx) {
+        vid.preload = "auto";
         vid.currentTime = 0;
-        vid.play().catch(() => {});
+        vid.play().catch((err) => console.warn("Video play failed:", err));
       } else {
         vid.pause();
         vid.currentTime = 0;
@@ -120,6 +121,7 @@ export default function ProjectCarousel() {
                     playsInline
                     loop
                     autoPlay={i === 0}
+                    preload={i === 0 ? "auto" : "none"}
                     className="w-full h-full object-contain block"
                   />
 
