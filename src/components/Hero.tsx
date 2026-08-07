@@ -54,9 +54,10 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="mt-6 max-w-lg text-lg text-fog leading-relaxed"
           >
-            STC Marketing creates direct mail campaigns and high-end websites
-            built to get your business noticed, remembered, and chosen. Not
-            just seen.
+            STC Marketing builds and manages custom websites for Oregon
+            businesses. We also run The Spotlights — an oversized direct mail
+            postcard that reaches 5,000 local households when you want to go
+            offline.
           </motion.p>
 
           <motion.div
@@ -86,9 +87,9 @@ export default function Hero() {
             className="mt-14 flex flex-wrap gap-10"
           >
             {[
-              ["Direct Mail", "That stands out"],
-              ["Websites", "Built to convert"],
-              ["Real Results", "For local businesses"],
+              ["Custom websites", "Zero templates, ever"],
+              ["5,000 households", "Per mailing drop"],
+              ["Oregon built", "For Oregon businesses"],
             ].map(([stat, label]) => (
               <div key={label}>
                 <div className="font-display text-2xl text-paper">{stat}</div>

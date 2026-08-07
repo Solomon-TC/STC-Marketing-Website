@@ -102,7 +102,7 @@ export default function PortfolioCarousel() {
         <Reveal>
           <span className="text-xs uppercase tracking-widest text-pine-light">Recent work</span>
           <h2 className="font-display text-balance mt-4 text-4xl text-paper sm:text-5xl max-w-2xl">
-            Refined, considered, on-brand.
+            Work that speaks for itself.
           </h2>
         </Reveal>
 

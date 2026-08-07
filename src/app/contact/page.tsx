@@ -22,11 +22,11 @@ export default function ContactPage() {
         eyebrow="Contact"
         title={
           <>
-            Let&apos;s talk,
-            <span className="text-tan italic"> we&apos;re here to help.</span>
+            Tell us about
+            <span className="text-tan italic"> your project.</span>
           </>
         }
-        description="Let us know what you're looking for and we'll reach out to see what we can do to help you and your business."
+        description="A new website, a Spotlight slot, or just a question — we read every message and respond within one business day."
       />
 
       <section className="bg-ink py-24 lg:py-32">

@@ -3,18 +3,18 @@ import Reveal from "./Reveal";
 
 const SERVICES = [
   {
+    href: "/website-design",
+    title: "Websites",
+    description:
+      "High-end, custom websites built to convert. We handle the design, build, hosting, and everything after launch so you never have to think about it.",
+    points: ["Custom design, no templates", "Hosting, updates, and security included", "Ongoing support and peace of mind"],
+  },
+  {
     href: "/the-spotlights",
     title: "The Spotlights",
     description:
       "One big 9x12\" postcard. Multiple local businesses. 5,000 households. Each business gets its own ad slot and because we only allow one business per industry, there's zero competition on the card.",
     points: ["Shared postcard, exclusive industry slot", "Complimentary ad design included", "Monthly or bi-monthly releases"],
-  },
-  {
-    href: "/website-design",
-    title: "Websites",
-    description:
-      "Modern, high-end websites built to convert. We handle the design, build, hosting, and everything after launch so you never have to think about it.",
-    points: ["Custom design, no templates", "Hosting, updates, and security included", "Ongoing support and peace of mind"],
   },
 ];
 

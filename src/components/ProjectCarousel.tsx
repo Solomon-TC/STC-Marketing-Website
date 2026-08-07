@@ -79,8 +79,14 @@ export default function ProjectCarousel() {
   };
 
   return (
-    <section className="bg-ink py-10 px-6 lg:px-10" style={{ overflow: "clip" }}>
+    <section className="bg-ink pt-16 pb-10 px-6 lg:px-10" style={{ overflow: "clip" }}>
       <div className="mx-auto max-w-5xl">
+
+        {/* Section heading */}
+        <div className="mb-10 text-center">
+          <span className="text-xs uppercase tracking-widest text-pine-light">Recent builds</span>
+          <h2 className="font-display mt-2 text-3xl text-paper sm:text-4xl">See the work.</h2>
+        </div>
 
         {/* Fan */}
         <div

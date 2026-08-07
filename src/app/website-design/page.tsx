@@ -54,7 +54,7 @@ export default function WebsiteDesignPage() {
         title={
           <>
             Websites built to
-            <span className="text-tan italic"> convert attention.</span>
+            <span className="text-tan italic"> convert.</span>
           </>
         }
         description="A high-end, modern website that looks great and keeps working long after launch. We design, build, host, and manage everything so you can focus on your business."

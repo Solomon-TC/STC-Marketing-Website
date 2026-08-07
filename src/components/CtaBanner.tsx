@@ -15,7 +15,7 @@ export default function CtaBanner() {
       <div className="relative mx-auto max-w-4xl px-6 lg:px-10 text-center">
         <Reveal>
           <h2 className="font-display text-balance text-4xl text-paper sm:text-5xl">
-            Are you ready to take your business to the next level?
+            The right customers are out there. Let&apos;s put your name in front of them.
           </h2>
           <div className="mt-9 flex flex-wrap justify-center gap-4">
             <Link
