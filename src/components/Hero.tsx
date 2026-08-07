@@ -34,9 +34,9 @@ export default function Hero() {
         <rect width="100%" height="100%" fill="url(#grid)" />
       </svg>
 
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-2 gap-16 items-center">
-        {/* Copy */}
-        <div>
+      {/* Copy — constrained to left portion of container */}
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
+        <div className="lg:max-w-[42%]">
           <motion.h1
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
@@ -52,7 +52,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-6 max-w-lg text-lg text-fog leading-relaxed"
+            className="mt-6 text-lg text-fog leading-relaxed"
           >
             STC Marketing builds and manages custom websites for Oregon
             businesses. We also run The Spotlights — an oversized direct mail
@@ -98,44 +98,34 @@ export default function Hero() {
             ))}
           </motion.div>
         </div>
-
-        {/* Postcard */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.92, y: 30 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-          className="relative mx-auto w-full max-w-md"
-        >
-          {/* Decorative shadow card */}
-          <div className="absolute -right-6 -top-6 h-full w-full rounded-2xl border border-white/10 bg-graphite" />
-
-          {/* Perspective container with mouse-tilt */}
-          <div
-            style={{ perspective: 1200 }}
-            onPointerMove={onPointerMove}
-            onPointerLeave={onPointerLeave}
-            className="relative"
-          >
-            <motion.div style={{ rotateX: tiltX, rotateY: tiltY }}>
-              <div className="relative aspect-[4/3] w-full rounded-2xl border border-white/10 shadow-2xl shadow-black/60 overflow-hidden">
-                <Image
-                  src="/images/spotlight-july-front.png"
-                  alt="The Newberg Spotlight — July 2026"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  priority
-                />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/70 to-transparent px-5 py-4 pointer-events-none">
-                  <span className="text-[10px] uppercase tracking-[0.25em] text-pine-light">
-                    The Newberg Spotlight · July 2026
-                  </span>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </motion.div>
       </div>
+
+      {/* Hero image — absolutely positioned to right side of section, desktop only */}
+      <motion.div
+        initial={{ opacity: 0, x: 40 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.9, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
+        className="hidden lg:flex absolute inset-y-0 right-0 lg:w-[46%] xl:w-[52%] items-center"
+      >
+        <div
+          style={{ perspective: 1200 }}
+          onPointerMove={onPointerMove}
+          onPointerLeave={onPointerLeave}
+          className="w-full px-8"
+        >
+          <motion.div style={{ rotateX: tiltX, rotateY: tiltY }}>
+            <Image
+              src="/images/hero-image.png"
+              alt="Valley Boy's Window & Gutter website — designed by STC Marketing"
+              width={4000}
+              height={2250}
+              className="w-full h-auto"
+              sizes="(max-width: 1279px) 46vw, 52vw"
+              priority
+            />
+          </motion.div>
+        </div>
+      </motion.div>
     </section>
   );
 }
