@@ -48,10 +48,11 @@ export default function ContactForm() {
               <Field label="Phone" name="phone" type="tel" autoComplete="tel" />
             </div>
             <div>
-              <label className="block text-xs uppercase tracking-widest text-mist mb-2">
+              <label htmlFor="interest" className="block text-xs uppercase tracking-widest text-mist mb-2">
                 I&apos;m interested in
               </label>
               <select
+                id="interest"
                 name="interest"
                 className="w-full rounded-lg border border-white/15 bg-ink px-4 py-3 text-paper focus:border-pine-light focus:outline-none focus:ring-1 focus:ring-pine-light"
                 defaultValue="website"
@@ -62,10 +63,11 @@ export default function ContactForm() {
               </select>
             </div>
             <div>
-              <label className="block text-xs uppercase tracking-widest text-mist mb-2">
+              <label htmlFor="message" className="block text-xs uppercase tracking-widest text-mist mb-2">
                 Tell us about your project
               </label>
               <textarea
+                id="message"
                 name="message"
                 required
                 rows={5}
