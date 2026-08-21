@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | STC Marketing",
+  title: "Privacy Policy",
   description: "How STC Marketing collects, uses, and protects information submitted through stcmarketingco.com.",
+  alternates: { canonical: "/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {

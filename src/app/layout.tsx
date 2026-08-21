@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/next";
+import { SITE, organizationSchema } from "@/lib/site";
+import { CITIES } from "@/lib/cities";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -19,46 +21,61 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "STC Marketing | Direct Mail & Web Design in Oregon",
+  title: {
+    default: "Web Design in Newberg, OR | Custom Websites | STC Marketing",
+    template: "%s | STC Marketing",
+  },
   description:
-    "STC Marketing puts your business in thousands of Oregon mailboxes with The Spotlights, our oversized 9x12\" postcard mailer, and builds high-end websites that convert.",
-  metadataBase: new URL("https://stcmarketingco.com"),
+    "STC Marketing designs, builds, hosts, and manages custom websites for local businesses across Oregon — plus The Spotlights, our oversized 9x12\" direct mail postcard in Newberg.",
+  metadataBase: new URL(SITE.url),
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "STC Marketing | Direct Mail & Web Design in Oregon",
+    title: "Web Design in Newberg, OR | Custom Websites | STC Marketing",
     description:
-      "Local advertising that actually gets seen. Oversized postcard mailers and modern websites for Oregon businesses.",
-    siteName: "STC Marketing",
+      "Custom websites for Oregon businesses — designed, built, hosted, and managed. Serving Newberg, McMinnville, the Portland metro, and beyond.",
+    siteName: SITE.name,
     locale: "en_US",
     type: "website",
-    url: "https://stcmarketingco.com",
+    url: SITE.url,
   },
   twitter: {
     card: "summary_large_image",
-    title: "STC Marketing | Direct Mail & Web Design in Oregon",
+    title: "Web Design in Newberg, OR | Custom Websites | STC Marketing",
     description:
-      "Local advertising that actually gets seen. Oversized postcard mailers and modern websites for Oregon businesses.",
+      "Custom websites for Oregon businesses — designed, built, hosted, and managed by a local Oregon team.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
   },
 };
 
+/** Every city we serve, as structured entities rather than a vague "Oregon, USA" string. */
+const areaServed = [
+  { "@type": "State", name: "Oregon" },
+  ...CITIES.map((c) => ({
+    "@type": "City",
+    name: c.name,
+    containedInPlace: { "@type": "State", name: "Oregon" },
+  })),
+];
+
 const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "STC Marketing",
-  description:
-    "STC Marketing helps local businesses grow with The Spotlights — a shared 9×12″ direct mail postcard reaching 5,000 households per city — and custom high-end website design.",
-  url: "https://stcmarketingco.com",
-  email: "stcmarketingco@gmail.com",
-  telephone: "+15038080452",
-  areaServed: "Oregon, USA",
-  founder: [
-    { "@type": "Person", name: "Silas Capell" },
-    { "@type": "Person", name: "Solomon Capell" },
-  ],
-  sameAs: ["https://github.com/Solomon-TC/STC-Marketing-Website"],
+  ...organizationSchema(areaServed),
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Marketing Services",
     itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Website Design and Management",
+          description:
+            "Custom website design for local businesses — fast, mobile-first, and built to convert. Includes hosting, domain management, security updates, and ongoing support.",
+        },
+      },
       {
         "@type": "Offer",
         itemOffered: {
@@ -68,17 +85,18 @@ const jsonLd = {
             "Shared 9×12″ direct mail postcard featuring multiple local businesses, mailed to 5,000 households per city. One business per industry.",
         },
       },
-      {
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: "Website Design",
-          description:
-            "Custom, high-end website design for local businesses — fast, mobile-first, and built to convert.",
-        },
-      },
     ],
   },
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${SITE.url}/#website`,
+  url: SITE.url,
+  name: SITE.name,
+  publisher: { "@id": `${SITE.url}/#organization` },
+  inLanguage: "en-US",
 };
 
 export default function RootLayout({
@@ -95,6 +113,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-ink text-paper">

@@ -6,9 +6,10 @@ import Reveal from "@/components/Reveal";
 import CtaBanner from "@/components/CtaBanner";
 
 export const metadata: Metadata = {
-  title: "The Spotlights | STC Marketing",
+  title: "The Spotlights | Direct Mail Advertising in Newberg, OR",
   description:
-    "The Spotlights is a shared 9x12\" postcard featuring multiple local businesses, mailed to 5,000 households per city. One business per industry — your slot, exclusively yours.",
+    "A shared 9x12\" direct mail postcard featuring local businesses, mailed to 5,000 Newberg households. One business per industry — your slot, exclusively yours.",
+  alternates: { canonical: "/the-spotlights" },
 };
 
 const FEATURES = [

@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { useMotionValue, useSpring, useTransform, motion } from "framer-motion";
 import type { PointerEvent } from "react";
+import Stars from "./Stars";
+import { GOOGLE_REVIEWS_URL } from "./Testimonials";
 
 export default function Hero() {
   const mx = useMotionValue(0);
@@ -37,11 +39,26 @@ export default function Hero() {
       {/* Copy — constrained to left portion of container */}
       <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
         <div className="lg:max-w-[42%]">
-          <motion.h1
+          <motion.a
+            href={GOOGLE_REVIEWS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display text-balance text-5xl leading-[1.05] text-paper sm:text-6xl lg:text-7xl"
+            className="group inline-flex items-center gap-2 rounded-full border border-white/15 py-1.5 pl-3 pr-4 transition-colors duration-300 hover:border-pine-light/40"
+          >
+            <Stars className="h-3.5 w-3.5" />
+            <span className="text-xs text-fog group-hover:text-paper transition-colors duration-300">
+              5.0 on Google
+            </span>
+          </motion.a>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
+            className="font-display text-balance mt-5 text-5xl leading-[1.05] text-paper sm:text-6xl lg:text-7xl"
           >
             Marketing that
             <span className="text-tan italic"> works, </span>
@@ -115,10 +132,10 @@ export default function Hero() {
         >
           <motion.div style={{ rotateX: tiltX, rotateY: tiltY }}>
             <Image
-              src="/images/hero-image.png"
-              alt="Valley Boy's Window & Gutter website — designed by STC Marketing"
-              width={4000}
-              height={2250}
+              src="/images/hero-image-3.png"
+              alt="Custom website design by STC Marketing"
+              width={1483}
+              height={704}
               className="w-full h-auto"
               sizes="(max-width: 1279px) 46vw, 52vw"
               priority

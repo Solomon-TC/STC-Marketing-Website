@@ -6,9 +6,10 @@ import Reveal from "@/components/Reveal";
 import CtaBanner from "@/components/CtaBanner";
 
 export const metadata: Metadata = {
-  title: "The Newberg Spotlight | STC Marketing",
+  title: "The Newberg Spotlight | Direct Mail to 5,000 Newberg Homes",
   description:
     "The Newberg Spotlight is a shared 9x12\" direct mail postcard featuring local Newberg businesses, mailed to 5,000 households in the Newberg, OR area. Powered by STC Marketing.",
+  alternates: { canonical: "/the-spotlights/newberg" },
   openGraph: {
     title: "The Newberg Spotlight | STC Marketing",
     description:

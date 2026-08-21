@@ -6,9 +6,10 @@ import CtaBanner from "@/components/CtaBanner";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 
 export const metadata: Metadata = {
-  title: "About | STC Marketing",
+  title: "About STC Marketing | Web Design in Newberg, Oregon",
   description:
-    "STC Marketing is an Oregon-based advertising company helping local businesses grow with direct mail and modern websites.",
+    "STC Marketing is an Oregon web design and direct mail company founded by brothers Silas and Solomon Capell, helping local businesses get found and get chosen.",
+  alternates: { canonical: "/about" },
 };
 
 const VALUES = [

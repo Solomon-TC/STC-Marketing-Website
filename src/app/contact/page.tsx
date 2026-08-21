@@ -4,9 +4,10 @@ import Reveal from "@/components/Reveal";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact | STC Marketing",
+  title: "Contact | Web Design Quotes for Oregon Businesses",
   description:
-    "Get in touch with STC Marketing to get on a Spotlights mailer or start a new website for your Oregon business.",
+    "Get a quote for a custom website, or ask about a slot on The Newberg Spotlight. We read every message and respond within one business day.",
+  alternates: { canonical: "/contact" },
 };
 
 const DETAILS = [

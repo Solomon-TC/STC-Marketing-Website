@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import PageHero from "@/components/PageHero";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | STC Marketing",
+  title: "Terms of Service",
   description: "The terms that govern your use of stcmarketingco.com, operated by STC Marketing.",
+  alternates: { canonical: "/terms-of-service" },
 };
 
 export default function TermsOfServicePage() {
