@@ -5,7 +5,7 @@ import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CtaBanner from "@/components/CtaBanner";
 import FaqSection from "@/components/FaqSection";
-import ProjectCarousel from "@/components/ProjectCarousel";
+import WebsitePortfolio from "@/components/WebsitePortfolio";
 import { CITIES, SHARED_FAQS, getCity } from "@/lib/cities";
 import { SITE, ORG_ID, absoluteUrl, breadcrumbSchema, faqSchema } from "@/lib/site";
 
@@ -188,7 +188,10 @@ export default async function CityPage({ params }: Props) {
         </div>
       </section>
 
-      <ProjectCarousel />
+      <WebsitePortfolio
+        eyebrow="Recent builds"
+        heading={`Websites we've built for Oregon businesses.`}
+      />
 
       <FaqSection
         faqs={faqs}

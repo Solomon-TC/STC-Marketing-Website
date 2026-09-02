@@ -3,7 +3,7 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 import CtaBanner from "@/components/CtaBanner";
-import ProjectCarousel from "@/components/ProjectCarousel";
+import WebsitePortfolio from "@/components/WebsitePortfolio";
 import FaqSection from "@/components/FaqSection";
 import { CITIES_BY_REGION } from "@/lib/cities";
 import { ORG_ID, absoluteUrl, breadcrumbSchema, faqSchema } from "@/lib/site";
@@ -128,7 +128,7 @@ export default function WebsiteDesignPage() {
         description="A high-end, modern website that looks great and keeps working long after launch. We design, build, host, and manage everything so you can focus on your business."
       />
 
-      <ProjectCarousel />
+      <WebsitePortfolio />
 
       <section className="bg-ink py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-2 gap-16">
