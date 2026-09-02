@@ -5,8 +5,18 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
+import { WEBSITE_PROJECTS, projectImage } from "@/lib/projects";
 
-const SLIDES = [
+type Slide = {
+  src: string;
+  label: string;
+  caption: string;
+  href: string;
+  /** External links open in a new tab; internal ones use the router. */
+  external?: boolean;
+};
+
+const SPOTLIGHT_SLIDES: Slide[] = [
   {
     src: "/images/spotlight-july-front.png",
     label: "The Newberg Spotlight - July Front",
@@ -37,25 +47,18 @@ const SLIDES = [
     caption: "Corvo, OR · Efficient Roofing · Country Financial",
     href: "/the-spotlights",
   },
-  {
-    src: "/images/website-zd-builders.png",
-    label: "Z&D Builders",
-    caption: "Roofing & Remodeling · Newberg, OR",
-    href: "/website-design",
-  },
-  {
-    src: "/images/website-valley-boys.png",
-    label: "Valley Boy's Window & Gutter",
-    caption: "Window & Gutter Cleaning · Newberg, OR",
-    href: "/website-design",
-  },
-  {
-    src: "/images/website-well-hung-gutters.png",
-    label: "Well Hung Gutters",
-    caption: "Gutter Installation & Maintenance · Corvallis, OR",
-    href: "/website-design",
-  },
 ];
+
+/** Live client sites, linked straight to the real thing. */
+const WEBSITE_SLIDES: Slide[] = WEBSITE_PROJECTS.map((p) => ({
+  src: projectImage(p.slug),
+  label: p.name,
+  caption: `${p.category} · ${p.location}`,
+  href: p.url,
+  external: true,
+}));
+
+const SLIDES: Slide[] = [...WEBSITE_SLIDES, ...SPOTLIGHT_SLIDES];
 
 type CardPos = "left" | "center" | "right" | "hidden";
 
@@ -139,11 +142,21 @@ export default function PortfolioCarousel() {
                 <div className="relative bg-ink" style={{ aspectRatio: "16 / 9" }}>
                   {/* Invisible link overlay on center card */}
                   {isCenter && slide.href && (
-                    <Link
-                      href={slide.href}
-                      className="absolute inset-0 z-10"
-                      aria-label={`View ${slide.label}`}
-                    />
+                    slide.external ? (
+                      <a
+                        href={slide.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="absolute inset-0 z-10"
+                        aria-label={`Visit the ${slide.label} website`}
+                      />
+                    ) : (
+                      <Link
+                        href={slide.href}
+                        className="absolute inset-0 z-10"
+                        aria-label={`View ${slide.label}`}
+                      />
+                    )
                   )}
 
                   {pos !== "hidden" && (
@@ -158,7 +171,8 @@ export default function PortfolioCarousel() {
 
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ink/80 to-transparent px-4 py-3 pointer-events-none">
                     <p className="text-[10px] uppercase tracking-[0.22em] text-pine-light leading-none">
-                      {slide.label}{isCenter && slide.href ? " →" : ""}
+                      {slide.label}
+                      {isCenter && slide.href ? (slide.external ? " ↗" : " →") : ""}
                     </p>
                     <p className="text-[10px] text-mist mt-1 leading-none">
                       {slide.caption}
