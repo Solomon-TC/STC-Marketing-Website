@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
           <p className="mt-6 text-fog leading-relaxed">
             STC Marketing (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) operates the website{" "}
             <a
-              href="https://stcmarketingco.com"
+              href="https://www.stcmarketingco.com"
               className="text-pine-light underline underline-offset-2 hover:text-paper transition-colors"
             >
               stcmarketingco.com

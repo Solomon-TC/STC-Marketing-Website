@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     title: "The Newberg Spotlight | STC Marketing",
     description:
       "Local Newberg businesses featured on one oversized postcard — delivered to 5,000 Newberg households. One business per industry.",
-    url: "https://stcmarketingco.com/the-spotlights/newberg",
+    url: "https://www.stcmarketingco.com/the-spotlights/newberg",
     images: [
       {
-        url: "https://stcmarketingco.com/og-image.png",
+        url: "https://www.stcmarketingco.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "The Newberg Spotlight postcard",
@@ -44,7 +44,7 @@ const jsonLd = {
       name: "Oregon",
     },
   },
-  url: "https://stcmarketingco.com/the-spotlights/newberg",
+  url: "https://www.stcmarketingco.com/the-spotlights/newberg",
 };
 
 export default function NewbergSpotlightPage() {

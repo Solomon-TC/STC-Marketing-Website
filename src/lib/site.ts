@@ -1,6 +1,9 @@
 export const SITE = {
   name: "STC Marketing",
-  url: "https://stcmarketingco.com",
+  // Canonical host. The apex domain 308-redirects to www, so every URL we
+  // publish (canonicals, sitemap, robots, schema) must use www or Google
+  // files the whole site under "Page with redirect" and skips indexing it.
+  url: "https://www.stcmarketingco.com",
   email: "stcmarketingco@gmail.com",
   phone: "(503) 808-0452",
   phoneRaw: "+15038080452",

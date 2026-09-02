@@ -23,7 +23,7 @@ export default function TermsOfServicePage() {
           <p className="mt-6 text-fog leading-relaxed">
             These Terms of Service (&ldquo;Terms&rdquo;) govern your use of{" "}
             <a
-              href="https://stcmarketingco.com"
+              href="https://www.stcmarketingco.com"
               className="text-pine-light underline underline-offset-2 hover:text-paper transition-colors"
             >
               stcmarketingco.com

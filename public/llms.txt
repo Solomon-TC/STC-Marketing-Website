@@ -26,9 +26,9 @@ Based in Newberg, Oregon. Website services are available statewide, with dedicat
 
 ## Key pages
 
-- [Home](https://stcmarketingco.com): Overview of both services.
-- [Web design](https://stcmarketingco.com/website-design): Website services, process, service areas, and FAQ.
-- [The Spotlights](https://stcmarketingco.com/the-spotlights): How the shared direct mail postcard works.
-- [The Newberg Spotlight](https://stcmarketingco.com/the-spotlights/newberg): The Newberg edition specifically.
-- [About](https://stcmarketingco.com/about): Who runs STC Marketing.
-- [Contact](https://stcmarketingco.com/contact): Quote requests and inquiries.
+- [Home](https://www.stcmarketingco.com): Overview of both services.
+- [Web design](https://www.stcmarketingco.com/website-design): Website services, process, service areas, and FAQ.
+- [The Spotlights](https://www.stcmarketingco.com/the-spotlights): How the shared direct mail postcard works.
+- [The Newberg Spotlight](https://www.stcmarketingco.com/the-spotlights/newberg): The Newberg edition specifically.
+- [About](https://www.stcmarketingco.com/about): Who runs STC Marketing.
+- [Contact](https://www.stcmarketingco.com/contact): Quote requests and inquiries.
