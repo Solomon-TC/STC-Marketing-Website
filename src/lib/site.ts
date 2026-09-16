@@ -9,7 +9,7 @@ export const SITE = {
   phoneRaw: "+15038080452",
   googleReviewsUrl:
     "https://www.google.com/maps/place/STC+Marketing/@44.0236851,-125.8667041,6z/data=!4m8!3m7!1s0x86ff769f1c774309:0xae64d79979c4a35f!8m2!3d44.1455904!4d-120.5834015!9m1!1b1!16s%2Fg%2F11z9f7s66t?entry=ttu&g_ep=EgoyMDI2MDgxNy4wIKXMDSoASAFQAw%3D%3D",
-  rating: { value: "5.0", count: 3 },
+  rating: { value: "5.0", count: 5 },
   base: { city: "Newberg", state: "Oregon", stateCode: "OR" },
 } as const;
 

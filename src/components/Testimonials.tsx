@@ -20,6 +20,16 @@ const REVIEWS = [
       "It's always a great experience working with the team at STC. They recently created a professional website for me that has helped position me at the top of my industry in my local area. More importantly, they took the time to understand my vision and bring it to life.",
     name: "Jack Chlumak",
   },
+  {
+    quote:
+      "Great people, with very nice personalities. I would recommend them to others business that are trying to start like me. Also they are always there, when I call them for any questions, plus great price.",
+    name: "Moisés Sotelo",
+  },
+  {
+    quote:
+      "These guys did a great job. My website looks great and they had it done super fast.",
+    name: "Jesse Robinson",
+  },
 ];
 
 export default function Testimonials() {
