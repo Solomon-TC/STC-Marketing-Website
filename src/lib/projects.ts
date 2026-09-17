@@ -84,6 +84,16 @@ export const WEBSITE_PROJECTS: Project[] = [
     url: "https://pacificcrematory.com",
     display: "pacificcrematory.com",
   },
+  {
+    slug: "david-spatola",
+    name: "David Spatola Entertainment",
+    category: "Pianist, Vocalist & DJ",
+    location: "NJ, NY & PA",
+    description:
+      "Twenty-five years of live piano and vocals for weddings, corporate parties, and open houses across the tri-state area.",
+    url: "https://www.davidspatolaentertainment.com",
+    display: "davidspatolaentertainment.com",
+  },
 ];
 
 export function projectImage(slug: string) {
