@@ -6,9 +6,9 @@ import CtaBanner from "@/components/CtaBanner";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 
 export const metadata: Metadata = {
-  title: "About STC Marketing | Web Design in Newberg, Oregon",
+  title: "About STC Marketing | Custom Web Design for Local Businesses",
   description:
-    "STC Marketing is an Oregon web design and direct mail company founded by brothers Silas and Solomon Capell, helping local businesses get found and get chosen.",
+    "STC Marketing is a web design company founded by brothers Silas and Solomon Capell, helping local businesses across the country get found and get chosen.",
   alternates: { canonical: "/about" },
 };
 
@@ -37,11 +37,11 @@ export default function AboutPage() {
         eyebrow="About Us"
         title={
           <>
-            Built in Oregon, for
-            <span className="text-tan italic"> Oregon businesses.</span>
+            Two brothers building sites for
+            <span className="text-tan italic"> local businesses.</span>
           </>
         }
-        description="STC Marketing combines old-school direct mail with modern web design to help local businesses get found and get chosen."
+        description="STC Marketing designs, builds, and manages custom websites for local businesses across the country — and gets them found."
       />
 
       <section className="bg-ink py-24 lg:py-32">

@@ -4,16 +4,16 @@ import Reveal from "@/components/Reveal";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact | Web Design Quotes for Oregon Businesses",
+  title: "Contact | Custom Web Design Quotes",
   description:
-    "Get a quote for a custom website, or ask about a slot on The Newberg Spotlight. We read every message and respond within one business day.",
+    "Get a quote for a custom website, wherever your business is. We read every message and respond within one business day.",
   alternates: { canonical: "/contact" },
 };
 
 const DETAILS = [
   { label: "Email", value: "stcmarketingco@gmail.com", href: "mailto:stcmarketingco@gmail.com" },
   { label: "Phone", value: "(503) 808-0452", href: "tel:+15038080452" },
-  { label: "Service area", value: "Oregon, statewide" },
+  { label: "Service area", value: "Nationwide, remote" },
 ];
 
 export default function ContactPage() {
@@ -27,7 +27,7 @@ export default function ContactPage() {
             <span className="text-tan italic"> your project.</span>
           </>
         }
-        description="A new website, a Spotlight slot, or just a question — we read every message and respond within one business day."
+        description="A new website, a question about an existing one, or a Spotlight slot — we read every message and respond within one business day."
       />
 
       <section className="bg-ink py-24 lg:py-32">

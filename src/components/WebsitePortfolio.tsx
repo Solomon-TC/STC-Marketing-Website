@@ -18,7 +18,7 @@ export default function WebsitePortfolio({
             {heading}
           </h2>
           <p className="mt-5 max-w-2xl text-fog leading-relaxed">
-            Every one of these was designed from scratch for a real Oregon
+            Every one of these was designed from scratch for a real local
             business. Click through and see them live.
           </p>
         </Reveal>

@@ -1,15 +1,15 @@
 # STC Marketing
 
-> STC Marketing is a web design and direct mail marketing company based in Newberg, Oregon. We design, build, host, and manage custom websites for local businesses throughout Oregon, and we publish The Newberg Spotlight, a shared oversized direct mail postcard.
+> STC Marketing is a web design company that designs, builds, hosts, and manages custom websites for local businesses across the United States. We also publish The Newberg Spotlight, a shared oversized direct mail postcard that runs in Newberg, Oregon only.
 
 ## Services
 
-- **Web design and website management** — Custom websites designed from scratch (never templates) for local businesses. Every build includes mobile-first responsive layouts, fast load times, on-page SEO and real meta tags, hosting and domain management, security and software updates, and ongoing support after launch. Available throughout Oregon.
-- **The Spotlights** — A shared 9x12" direct mail postcard featuring multiple local businesses, mailed to 5,000 households. Only one business per industry appears on each card. Ad design is included at no extra cost. Currently runs in Newberg, Oregon only.
+- **Web design and website management** (primary service) — Custom websites designed from scratch (never templates) for local businesses. Every build includes mobile-first responsive layouts, fast load times, on-page SEO and real meta tags, hosting and domain management, security and software updates, and ongoing support after launch. Available anywhere in the United States; the process runs remotely.
+- **The Spotlights** (secondary service) — A shared 9x12" direct mail postcard featuring multiple local businesses, mailed to 5,000 households. Only one business per industry appears on each card. Ad design is included at no extra cost. Currently runs in Newberg, Oregon only.
 
 ## Service areas
 
-Based in Newberg, Oregon. Website services are available statewide, with dedicated coverage in:
+Website services are available nationwide and handled remotely. The company started in Newberg, Oregon and has dedicated local coverage in:
 
 - **Yamhill County:** Newberg, Dundee, McMinnville, Lafayette, Carlton, Yamhill
 - **Portland metro:** Sherwood, Tigard, Tualatin, Wilsonville, Lake Oswego, Beaverton, Hillsboro
@@ -18,7 +18,7 @@ Based in Newberg, Oregon. Website services are available statewide, with dedicat
 ## Company facts
 
 - Founded by brothers Silas and Solomon Capell
-- Based in Newberg, Oregon; service-area business (no public storefront)
+- Works with local businesses nationwide; remote process, no public storefront
 - Rated 5.0 out of 5 on Google
 - Email: stcmarketingco@gmail.com
 - Phone: (503) 808-0452
@@ -26,7 +26,7 @@ Based in Newberg, Oregon. Website services are available statewide, with dedicat
 
 ## Key pages
 
-- [Home](https://www.stcmarketingco.com): Overview of both services.
+- [Home](https://www.stcmarketingco.com): Overview of services.
 - [Web design](https://www.stcmarketingco.com/website-design): Website services, process, service areas, and FAQ.
 - [The Spotlights](https://www.stcmarketingco.com/the-spotlights): How the shared direct mail postcard works.
 - [The Newberg Spotlight](https://www.stcmarketingco.com/the-spotlights/newberg): The Newberg edition specifically.

@@ -190,7 +190,7 @@ export default async function CityPage({ params }: Props) {
 
       <WebsitePortfolio
         eyebrow="Recent builds"
-        heading={`Websites we've built for Oregon businesses.`}
+        heading={`Websites we've built for local businesses.`}
       />
 
       <FaqSection
@@ -207,7 +207,8 @@ export default async function CityPage({ params }: Props) {
               We also build websites nearby.
             </h2>
             <p className="mt-3 text-sm text-mist">
-              Serving {city.name} and communities across Oregon.
+              Serving {city.name}, the surrounding area, and local businesses
+              across the country.
             </p>
             <ul className="mt-8 flex flex-wrap gap-3">
               {nearby.map((c) => (

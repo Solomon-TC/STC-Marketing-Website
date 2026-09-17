@@ -57,8 +57,8 @@ export default function ContactForm() {
                 className="w-full rounded-lg border border-white/15 bg-ink px-4 py-3 text-paper focus:border-pine-light focus:outline-none focus:ring-1 focus:ring-pine-light"
                 defaultValue="website"
               >
-                <option value="spotlights">The Spotlights (direct mail)</option>
                 <option value="website">Website Design</option>
+                <option value="spotlights">The Spotlights (direct mail)</option>
                 <option value="both">Both</option>
               </select>
             </div>

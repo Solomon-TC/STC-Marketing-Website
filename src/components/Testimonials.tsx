@@ -39,7 +39,7 @@ export default function Testimonials() {
         <Reveal>
           <span className="text-xs uppercase tracking-widest text-pine-light">Client reviews</span>
           <h2 className="font-display text-balance mt-4 text-4xl text-paper sm:text-5xl max-w-2xl">
-            Oregon businesses, real results.
+            Local businesses, real results.
           </h2>
 
           <a

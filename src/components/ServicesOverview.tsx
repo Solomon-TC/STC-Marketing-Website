@@ -5,6 +5,8 @@ const SERVICES = [
   {
     href: "/website-design",
     title: "Websites",
+    eyebrow: "What we do most",
+    featured: true,
     description:
       "High-end, custom websites built to convert. We handle the design, build, hosting, and everything after launch so you never have to think about it.",
     points: ["Custom design, no templates", "Hosting, updates, and security included", "Ongoing support and peace of mind"],
@@ -12,9 +14,11 @@ const SERVICES = [
   {
     href: "/the-spotlights",
     title: "The Spotlights",
+    eyebrow: "Also available",
+    featured: false,
     description:
-      "One big 9x12\" postcard. Multiple local businesses. 5,000 households. Each business gets its own ad slot and because we only allow one business per industry, there's zero competition on the card.",
-    points: ["Shared postcard, exclusive industry slot", "Complimentary ad design included", "Monthly or bi-monthly releases"],
+      "One big 9x12\" postcard shared by local businesses in Newberg, Oregon. One business per industry, so there's zero competition on the card.",
+    points: ["Shared postcard, exclusive industry slot", "Complimentary ad design included", "Newberg, Oregon only"],
   },
 ];
 
@@ -29,14 +33,23 @@ export default function ServicesOverview() {
           </h2>
         </Reveal>
 
-        <div className="mt-16 grid gap-8 lg:grid-cols-2">
+        <div className="mt-16 grid gap-8 lg:grid-cols-[1.35fr_1fr] items-start">
           {SERVICES.map((service, i) => (
             <Reveal key={service.href} delay={i * 0.12}>
               <Link
                 href={service.href}
-                className="group relative block h-full rounded-2xl border border-white/10 bg-charcoal p-10 transition-colors duration-300 hover:border-pine-light/40"
+                className={`group relative block h-full rounded-2xl border bg-charcoal p-10 transition-colors duration-300 hover:border-pine-light/40 ${
+                  service.featured ? "border-pine-light/25" : "border-white/10"
+                }`}
               >
-                <h3 className="font-display mt-3 text-3xl text-paper group-hover:text-pine-light transition-colors duration-300">
+                <span className="text-xs uppercase tracking-widest text-pine-light">
+                  {service.eyebrow}
+                </span>
+                <h3
+                  className={`font-display mt-3 text-paper group-hover:text-pine-light transition-colors duration-300 ${
+                    service.featured ? "text-4xl" : "text-2xl"
+                  }`}
+                >
                   {service.title}
                 </h3>
                 <p className="mt-4 text-fog leading-relaxed">{service.description}</p>

@@ -38,7 +38,7 @@ export function organizationSchema(areaServed: object[]) {
     "@id": ORG_ID,
     name: SITE.name,
     description:
-      "STC Marketing designs, builds, hosts, and manages custom websites for local businesses across Oregon, and runs The Spotlights — a shared oversized direct mail postcard reaching 5,000 households per city.",
+      "STC Marketing designs, builds, hosts, and manages custom websites for local businesses across the country. We also run The Spotlights, a shared oversized direct mail postcard in Newberg, Oregon.",
     url: SITE.url,
     email: SITE.email,
     telephone: SITE.phoneRaw,

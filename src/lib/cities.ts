@@ -353,7 +353,7 @@ export const SHARED_FAQS = (city: string) => [
     a:
       city === "Newberg"
         ? "Yes. The Newberg Spotlight is our shared 9x12\" postcard mailed to 5,000 Newberg households, with one business per industry on each card."
-        : `The Spotlights currently runs in Newberg only. Website design, hosting, and management are available throughout Oregon, including ${city}.`,
+        : `The Spotlights currently runs in Newberg, Oregon only. Website design, hosting, and management are available anywhere in the country, including ${city}.`,
   },
   {
     q: "How do I get started?",

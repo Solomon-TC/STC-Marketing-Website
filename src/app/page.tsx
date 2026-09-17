@@ -9,11 +9,11 @@ import { faqSchema } from "@/lib/site";
 const FAQS = [
   {
     q: "What does STC Marketing do?",
-    a: "We design, build, host, and manage custom websites for local businesses across Oregon. We also run The Spotlights, a shared 9x12\" direct mail postcard mailed to 5,000 households in Newberg, with one business per industry on each card.",
+    a: "We design, build, host, and manage custom websites for local businesses across the country. Every site is built from scratch, and we keep running it after launch so you never have to deal with the technical side.",
   },
   {
-    q: "Where is STC Marketing based?",
-    a: "We're based in Newberg, Oregon, and serve businesses throughout the state — including McMinnville, Dundee, Carlton, Lafayette, Yamhill, Sherwood, Tigard, Tualatin, Wilsonville, Lake Oswego, Beaverton, Hillsboro, and Corvallis.",
+    q: "Do you only work with businesses in Oregon?",
+    a: "No. We started in Newberg, Oregon and still work with a lot of businesses there, but we build and manage websites for local businesses anywhere in the country. The whole process works remotely.",
   },
   {
     q: "How much does a website cost?",

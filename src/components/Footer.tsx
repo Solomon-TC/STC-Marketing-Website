@@ -20,8 +20,8 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-sm text-mist leading-relaxed max-w-xs">
-            Local advertising for Oregon businesses. Oversized direct mail
-            and modern websites that get you found.
+            Custom websites for local businesses across the country. Designed,
+            built, hosted, and managed so you get found.
           </p>
         </div>
 
@@ -31,13 +31,13 @@ export default function Footer() {
           </h4>
           <ul className="space-y-3 text-sm text-mist">
             <li>
-              <Link href="/the-spotlights" className="hover:text-pine-light transition-colors">
-                The Spotlights
+              <Link href="/website-design" className="hover:text-pine-light transition-colors">
+                Websites
               </Link>
             </li>
             <li>
-              <Link href="/website-design" className="hover:text-pine-light transition-colors">
-                Websites
+              <Link href="/the-spotlights" className="hover:text-pine-light transition-colors">
+                The Spotlights
               </Link>
             </li>
           </ul>
@@ -76,7 +76,7 @@ export default function Footer() {
                 (503) 808-0452
               </a>
             </li>
-            <li className="text-mist">Serving Oregon, USA</li>
+            <li className="text-mist">Serving local businesses nationwide</li>
           </ul>
         </div>
       </div>
@@ -85,7 +85,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-10">
           <h4 className="text-xs uppercase tracking-widest text-fog mb-4">
-            Web design across Oregon
+            Web design by city
           </h4>
           <ul className="flex flex-wrap gap-x-5 gap-y-2.5">
             {CITIES.map((city) => (
@@ -105,7 +105,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-6 flex flex-col sm:flex-row justify-between gap-2 text-xs text-mist">
           <span>&copy; {new Date().getFullYear()} STC Marketing. All rights reserved.</span>
-          <span>Built in Oregon.</span>
+          <span>Built for local business.</span>
         </div>
       </div>
     </footer>

@@ -22,17 +22,17 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Web Design in Newberg, OR | Custom Websites | STC Marketing",
+    default: "Custom Web Design for Local Businesses | STC Marketing",
     template: "%s | STC Marketing",
   },
   description:
-    "STC Marketing designs, builds, hosts, and manages custom websites for local businesses across Oregon — plus The Spotlights, our oversized 9x12\" direct mail postcard in Newberg.",
+    "STC Marketing designs, builds, hosts, and manages custom websites for local businesses across the country. No templates, and nothing technical left on your plate after launch.",
   metadataBase: new URL(SITE.url),
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Web Design in Newberg, OR | Custom Websites | STC Marketing",
+    title: "Custom Web Design for Local Businesses | STC Marketing",
     description:
-      "Custom websites for Oregon businesses — designed, built, hosted, and managed. Serving Newberg, McMinnville, the Portland metro, and beyond.",
+      "Custom websites for local businesses across the country — designed, built, hosted, and managed.",
     siteName: SITE.name,
     locale: "en_US",
     type: "website",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Web Design in Newberg, OR | Custom Websites | STC Marketing",
+    title: "Custom Web Design for Local Businesses | STC Marketing",
     description:
-      "Custom websites for Oregon businesses — designed, built, hosted, and managed by a local Oregon team.",
+      "Custom websites for local businesses across the country — designed, built, hosted, and managed.",
   },
   robots: {
     index: true,
@@ -51,8 +51,12 @@ export const metadata: Metadata = {
   },
 };
 
-/** Every city we serve, as structured entities rather than a vague "Oregon, USA" string. */
+/**
+ * We serve the whole country, with named cities kept as structured entities so
+ * the city landing pages keep their local search signal.
+ */
 const areaServed = [
+  { "@type": "Country", name: "United States" },
   { "@type": "State", name: "Oregon" },
   ...CITIES.map((c) => ({
     "@type": "City",

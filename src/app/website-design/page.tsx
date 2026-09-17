@@ -9,9 +9,9 @@ import { CITIES_BY_REGION } from "@/lib/cities";
 import { ORG_ID, absoluteUrl, breadcrumbSchema, faqSchema } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Web Design in Oregon | Custom Websites Built to Convert",
+  title: "Web Design for Local Businesses | Custom Websites Built to Convert",
   description:
-    "Custom web design for Oregon businesses — designed, built, hosted, and managed by STC Marketing. Serving Newberg, McMinnville, the Portland metro, and beyond.",
+    "Custom web design for local businesses across the country — designed, built, hosted, and managed by STC Marketing. No templates, ever.",
   alternates: { canonical: "/website-design" },
 };
 
@@ -37,12 +37,12 @@ const FAQS = [
     a: "Every build includes on-page SEO fundamentals: real meta titles and descriptions, proper heading structure, fast load times, mobile-first layouts, and clear signals about the cities you serve. That's the foundation local ranking is built on.",
   },
   {
-    q: "What areas of Oregon do you serve?",
-    a: "We're based in Newberg and work with businesses throughout Oregon, including McMinnville, Dundee, Carlton, Lafayette, Yamhill, Sherwood, Tigard, Tualatin, Wilsonville, Lake Oswego, Beaverton, Hillsboro, and Corvallis.",
+    q: "What areas do you serve?",
+    a: "We work with local businesses anywhere in the country. We started in Newberg, Oregon and still have a lot of clients across the Willamette Valley and Portland metro, but the whole process works remotely, so where you are doesn't limit what we can build.",
   },
   {
     q: "Do I need to be local to work with you?",
-    a: "No. We work with businesses across Oregon and handle everything remotely, though we're always glad to meet in person when you're nearby.",
+    a: "No. We work with businesses all over the country and handle everything remotely, though we're always glad to meet in person when you're nearby.",
   },
 ];
 
@@ -52,9 +52,9 @@ const serviceSchema = {
   name: "Web Design and Website Management",
   serviceType: "Web design",
   description:
-    "Custom website design, development, hosting, and ongoing management for local businesses throughout Oregon.",
+    "Custom website design, development, hosting, and ongoing management for local businesses across the United States.",
   provider: { "@id": ORG_ID },
-  areaServed: { "@type": "State", name: "Oregon" },
+  areaServed: { "@type": "Country", name: "United States" },
   url: absoluteUrl("/website-design"),
 };
 
@@ -204,9 +204,9 @@ export default function WebsiteDesignPage() {
               Where we build websites.
             </h2>
             <p className="mt-5 max-w-2xl text-fog leading-relaxed">
-              We&apos;re based in Newberg and work with businesses across Oregon.
-              These are the areas we know best — pick your city to see how we
-              approach work there.
+              We build for local businesses anywhere in the country. These are
+              the areas we know best — pick your city to see how we approach
+              work there.
             </p>
           </Reveal>
 

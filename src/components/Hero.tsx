@@ -71,10 +71,9 @@ export default function Hero() {
             transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="mt-6 text-lg text-fog leading-relaxed"
           >
-            STC Marketing builds and manages custom websites for Oregon
-            businesses. We also run The Spotlights — an oversized direct mail
-            postcard that reaches 5,000 local households when you want to go
-            offline.
+            STC Marketing builds and manages custom websites for local
+            businesses across the country. Designed from scratch, built to
+            convert, and looked after long after launch.
           </motion.p>
 
           <motion.div
@@ -105,8 +104,8 @@ export default function Hero() {
           >
             {[
               ["Custom websites", "Zero templates, ever"],
-              ["5,000 households", "Per mailing drop"],
-              ["Oregon built", "For Oregon businesses"],
+              ["Hosting included", "Updates, security, support"],
+              ["Nationwide", "Local businesses anywhere"],
             ].map(([stat, label]) => (
               <div key={label}>
                 <div className="font-display text-2xl text-paper">{stat}</div>

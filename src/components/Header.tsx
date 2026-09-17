@@ -7,8 +7,8 @@ import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 
 const NAV_LINKS = [
-  { href: "/the-spotlights", label: "The Spotlights" },
   { href: "/website-design", label: "Websites" },
+  { href: "/the-spotlights", label: "The Spotlights" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
