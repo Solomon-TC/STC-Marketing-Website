@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import MotionProvider from "@/components/MotionProvider";
 import { Analytics } from "@vercel/analytics/next";
 import { SITE, organizationSchema } from "@/lib/site";
@@ -116,11 +114,8 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-ink text-paper">
-        <MotionProvider>
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </MotionProvider>
+        {/* Site chrome lives in (site)/layout so ad landing pages can run without it. */}
+        <MotionProvider>{children}</MotionProvider>
         <Analytics />
       </body>
     </html>

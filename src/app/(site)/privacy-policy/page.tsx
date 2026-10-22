@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
 
       <section className="bg-ink py-24 lg:py-32">
         <div className="mx-auto max-w-3xl px-6 lg:px-10">
-          <p className="text-sm text-mist italic">Last updated: August 18, 2026</p>
+          <p className="text-sm text-mist italic">Last updated: October 22, 2026</p>
 
           <p className="mt-6 text-fog leading-relaxed">
             STC Marketing (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) operates the website{" "}
@@ -33,7 +33,7 @@ export default function PrivacyPolicyPage() {
 
           <h2 className="font-display mt-12 text-2xl text-paper">Information we collect</h2>
           <p className="mt-4 text-fog leading-relaxed">
-            The only personal information we collect through this Site is what you choose to submit through our contact form — typically your name, email address, phone number, and the message you send us. We do not require you to create an account, and we do not knowingly collect information from anyone under the age of 13.
+            The only personal information we collect through this Site is what you choose to submit through our contact and project inquiry forms — typically your name, business name, email address, phone number, your current website, and details about your project such as your goals, timeline, and budget. If you book a call, we also receive the time you choose. We do not require you to create an account, and we do not knowingly collect information from anyone under the age of 13.
           </p>
 
           <h2 className="font-display mt-12 text-2xl text-paper">How we use your information</h2>
@@ -43,7 +43,7 @@ export default function PrivacyPolicyPage() {
 
           <h2 className="font-display mt-12 text-2xl text-paper">Service providers</h2>
           <p className="mt-4 text-fog leading-relaxed">
-            We use Vercel to host this Site. Vercel may process technical data (such as IP addresses) as part of providing hosting services. These providers access your information only as needed to perform their services for us and are not permitted to use it for any other purpose.
+            We use Vercel to host this Site, Resend to deliver form submissions to our inbox, and Cal.com to schedule calls. Vercel may process technical data (such as IP addresses) as part of providing hosting services, and when you book a call, Cal.com processes the details you enter to schedule it and send your confirmation. These providers access your information only as needed to perform their services for us and are not permitted to use it for any other purpose.
           </p>
 
           <h2 className="font-display mt-12 text-2xl text-paper">Cookies and tracking</h2>

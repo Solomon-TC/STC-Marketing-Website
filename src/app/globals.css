@@ -95,6 +95,20 @@ body {
   animation: marquee 45s linear infinite;
 }
 
+/*
+ * Pure-CSS entrance for content that must be visible before JavaScript loads,
+ * such as the landing page hero. Ad traffic is mostly mobile, often on slow
+ * connections, and a hero that waits on hydration shows up as a blank screen.
+ */
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(16px); filter: blur(8px); }
+  to { opacity: 1; transform: none; filter: blur(0); }
+}
+
+.rise-in {
+  animation: rise-in 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
 .marquee:hover .animate-marquee {
   animation-play-state: paused;
 }
@@ -114,7 +128,8 @@ body {
 
   .aurora-a,
   .aurora-b,
-  .animate-marquee {
+  .animate-marquee,
+  .rise-in {
     animation: none;
   }
 }

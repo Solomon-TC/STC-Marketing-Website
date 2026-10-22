@@ -30,7 +30,18 @@ const REVIEWS = [
   },
 ];
 
-export default function Testimonials({ tone = "ink" }: { tone?: "ink" | "charcoal" }) {
+export default function Testimonials({
+  tone = "ink",
+  only,
+}: {
+  tone?: "ink" | "charcoal";
+  /** Show just these reviewers, in this order. Defaults to all of them. */
+  only?: string[];
+}) {
+  const reviews = only
+    ? only.flatMap((name) => REVIEWS.filter((r) => r.name === name))
+    : REVIEWS;
+
   return (
     <section className={`${tone === "ink" ? "bg-ink" : "bg-charcoal"} border-t border-white/5 py-24 lg:py-32`}>
       <div className="mx-auto max-w-7xl px-6 lg:px-10">
@@ -56,7 +67,7 @@ export default function Testimonials({ tone = "ink" }: { tone?: "ink" | "charcoa
         </Reveal>
 
         <div className="mt-14 grid gap-6 md:grid-cols-2">
-          {REVIEWS.map((review, i) => (
+          {reviews.map((review, i) => (
             <Reveal key={review.name} delay={i * 0.08}>
               <GlowCard>
                 <figure className="flex h-full flex-col p-8 sm:p-10">

@@ -10,6 +10,16 @@ export const SITE = {
   googleReviewsUrl:
     "https://www.google.com/maps/place/STC+Marketing/@44.0236851,-125.8667041,6z/data=!4m8!3m7!1s0x86ff769f1c774309:0xae64d79979c4a35f!8m2!3d44.1455904!4d-120.5834015!9m1!1b1!16s%2Fg%2F11z9f7s66t?entry=ttu&g_ep=EgoyMDI2MDgxNy4wIKXMDSoASAFQAw%3D%3D",
   rating: { value: "5.0", count: 5 },
+  /**
+   * Cal.com event path for the Introductory Call, e.g. "stc-marketing/intro-call".
+   * Empty means the landing page skips booking and promises a follow-up instead.
+   */
+  calLink: "stc-marketing-pbbra1/30min" as string,
+  /**
+   * Meta Pixel ID for ad conversion tracking. Empty means the Pixel never loads.
+   * Turning it on adds tracking cookies, so the privacy policy must be updated with it.
+   */
+  metaPixelId: "" as string,
   base: { city: "Newberg", state: "Oregon", stateCode: "OR" },
 } as const;
 
