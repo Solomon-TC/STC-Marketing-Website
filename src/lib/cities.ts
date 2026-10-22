@@ -342,7 +342,7 @@ export const SHARED_FAQS = (city: string) => [
   },
   {
     q: "Do you use website templates?",
-    a: "No. Every site is designed from scratch around your brand. Templates are the fastest way to look like every other business in your category, which is the opposite of what a website is supposed to do for you.",
+    a: "No. Every site is designed from scratch around your brand, so it looks and feels like your business and nothing else in your category.",
   },
   {
     q: "Can you connect my site to the tools I already use?",

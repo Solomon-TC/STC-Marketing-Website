@@ -26,13 +26,13 @@ export const metadata: Metadata = {
     template: "%s | STC Marketing",
   },
   description:
-    "Premium custom websites designed, built, and managed for businesses across the country. Real integrations, fast performance, and no templates — ever. Based in Oregon.",
+    "Exceptional custom websites for ambitious businesses across the country — designed from scratch, integrated with your tools, and managed after launch. Based in Oregon.",
   metadataBase: new URL(SITE.url),
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Beautiful websites that actually work | STC Marketing",
+    title: "Exceptional websites for ambitious businesses | STC Marketing",
     description:
-      "Premium custom web design and development for businesses nationwide — integrated with your tools and managed after launch.",
+      "Premium custom web design and development for ambitious businesses nationwide — integrated with your tools and managed after launch.",
     siteName: SITE.name,
     locale: "en_US",
     type: "website",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Beautiful websites that actually work | STC Marketing",
+    title: "Exceptional websites for ambitious businesses | STC Marketing",
     description:
-      "Premium custom web design and development for businesses nationwide — integrated with your tools and managed after launch.",
+      "Premium custom web design and development for ambitious businesses nationwide — integrated with your tools and managed after launch.",
   },
   robots: {
     index: true,

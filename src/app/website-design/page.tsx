@@ -28,7 +28,7 @@ const FAQS = [
   },
   {
     q: "Do you use templates or page builders?",
-    a: "No. Every site is designed from scratch around your brand. Templates are the fastest way to look like every other business in your category, which is the opposite of what a website is supposed to do for you.",
+    a: "No. Every site is designed from scratch around your brand, so it looks and feels like your business and nothing else in your category.",
   },
   {
     q: "What integrations can you add?",
@@ -40,7 +40,7 @@ const FAQS = [
   },
   {
     q: "What happens after the site launches?",
-    a: "We keep managing it. That means hosting, updates, security patches, and ongoing support. A website isn't a one-time purchase that you leave alone for five years — that's exactly how sites end up slow and outdated.",
+    a: "We keep managing it — hosting, updates, security patches, and ongoing support — so your site stays as sharp years from now as it is on launch day.",
   },
   {
     q: "Will my website show up on Google?",
@@ -110,10 +110,10 @@ export default function WebsiteDesignPage() {
               Your website should work as hard as you do.
             </h2>
             <p className="mt-6 text-fog leading-relaxed">
-              Most business websites are slow, outdated, or built on a
-              template that looks like everyone else&apos;s. When someone looks
-              you up, that first impression decides whether they reach out or
-              keep scrolling.
+              Your website is often the first time someone experiences your
+              business. An exceptional one sets the tone before you ever
+              speak &mdash; it signals quality, earns trust at a glance, and
+              makes reaching out feel like the obvious next step.
             </p>
             <p className="mt-4 text-fog leading-relaxed">
               We build sites that look the part, connect to the tools you run

@@ -9,11 +9,11 @@ import { SITE } from "@/lib/site";
 const EASE = [0.22, 1, 0.36, 1] as const;
 
 const HEADLINE: { text: string; accent?: boolean }[] = [
-  { text: "Beautiful" },
+  { text: "Exceptional" },
   { text: "websites" },
-  { text: "that" },
-  { text: "actually", accent: true },
-  { text: "work.", accent: true },
+  { text: "for" },
+  { text: "ambitious", accent: true },
+  { text: "businesses.", accent: true },
 ];
 
 const headline: Variants = {
@@ -110,9 +110,9 @@ export default function Hero() {
           {...fadeUp(0.75)}
           className="mt-8 max-w-2xl text-lg leading-relaxed text-fog sm:text-xl"
         >
-          Custom design and development for businesses across the country.
-          No templates, no shortcuts — fast, polished sites connected to the
-          tools you run on, and looked after long after launch.
+          We design, build, and manage custom websites for companies that
+          want to lead their market — crafted from scratch and cared for long
+          after launch.
         </motion.p>
 
         <motion.div

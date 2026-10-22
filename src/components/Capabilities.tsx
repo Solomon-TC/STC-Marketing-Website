@@ -64,8 +64,9 @@ export default function Capabilities({ tone = "charcoal" }: { tone?: "ink" | "ch
             Design that impresses. Engineering that holds up.
           </h2>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-fog">
-            Most websites manage one or the other. Every site we build is both
-            &mdash; and we stay with it long after launch.
+            An exceptional website needs both, at the highest level. That&apos;s
+            the standard for every site we build &mdash; and we stay with it
+            long after launch.
           </p>
         </Reveal>
 

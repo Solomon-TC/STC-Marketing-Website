@@ -5,11 +5,11 @@ import Reveal from "./Reveal";
 export default function CtaBanner({
   heading = (
     <>
-      Ready for a website that
-      <span className="text-tan italic"> actually works?</span>
+      Let&apos;s build something
+      <span className="text-tan italic"> exceptional.</span>
     </>
   ),
-  subtext = "Tell us about your business. We'll get back to you within one business day with a plan and a straight number.",
+  subtext = "Tell us about your business and where you want to take it. We'll get back to you within one business day with a plan and a straight number.",
   buttonLabel = "Start your project",
 }: {
   heading?: ReactNode;

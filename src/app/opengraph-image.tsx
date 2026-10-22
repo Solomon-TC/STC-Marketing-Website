@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "STC Marketing — Beautiful websites that actually work.";
+export const alt = "STC Marketing — Exceptional websites for ambitious businesses.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -59,8 +59,8 @@ export default function OGImage() {
               maxWidth: 980,
             }}
           >
-            Beautiful websites that&nbsp;
-            <span style={{ color: "#c9a06a", fontStyle: "italic" }}>actually work.</span>
+            Exceptional websites for&nbsp;
+            <span style={{ color: "#c9a06a", fontStyle: "italic" }}>ambitious businesses.</span>
           </div>
           <div style={{ fontSize: 26, color: "#a3a3aa", maxWidth: 820 }}>
             Premium custom websites — designed, built, integrated, and managed for

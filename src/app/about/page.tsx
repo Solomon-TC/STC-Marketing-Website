@@ -19,9 +19,9 @@ const VALUES = [
       "Every site is designed and built from scratch. No templates, no page builders, no cut corners. If your name is on it, it should look like someone cared.",
   },
   {
-    title: "Built to work, not just to look good",
+    title: "Beautiful and built to perform",
     description:
-      "A beautiful site that's slow, confusing, or disconnected from how you run your business isn't finished. Every build is fast, clear, and wired into the tools you use.",
+      "Exceptional means both: a site that's stunning to look at, effortless to use, fast everywhere, and wired into the tools you run on.",
   },
   {
     title: "We stay after launch",
@@ -37,8 +37,8 @@ export default function AboutPage() {
         eyebrow="About Us"
         title={
           <>
-            Two brothers building websites that
-            <span className="text-tan italic"> actually work.</span>
+            Two brothers building websites for
+            <span className="text-tan italic"> ambitious businesses.</span>
           </>
         }
         description="Based in Oregon, STC Marketing designs, builds, and manages premium custom websites for businesses across the country."

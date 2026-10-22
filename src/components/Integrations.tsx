@@ -19,7 +19,7 @@ const CATEGORIES = [
   },
   {
     title: "Custom features",
-    body: "Client logins, audio and media players, before-and-after sliders, interactive tools — built around how your business actually works.",
+    body: "Client logins, audio and media players, before-and-after sliders, interactive tools — built around how your business runs.",
   },
 ];
 

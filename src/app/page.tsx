@@ -28,7 +28,7 @@ const FAQS = [
   },
   {
     q: "Do you use templates?",
-    a: "No. Every site is designed from scratch around your brand. Templates are the fastest way to look like every other business in your category, which is the opposite of what a website is supposed to do for you.",
+    a: "No. Every site is designed from scratch around your brand, so it looks and feels like your business and nothing else in your category.",
   },
   {
     q: "Do you keep managing the site after it launches?",
