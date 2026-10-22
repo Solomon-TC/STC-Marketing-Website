@@ -63,3 +63,58 @@ body {
 .text-balance {
   text-wrap: balance;
 }
+
+/* ---------- Ambient motion ---------- */
+
+@keyframes aurora-a {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(8%, 6%, 0) scale(1.08); }
+}
+
+@keyframes aurora-b {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(-7%, -5%, 0) scale(1.12); }
+}
+
+@keyframes marquee {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+
+.aurora-a {
+  animation: aurora-a 20s ease-in-out infinite;
+  will-change: transform;
+}
+
+.aurora-b {
+  animation: aurora-b 26s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-marquee {
+  animation: marquee 45s linear infinite;
+}
+
+.marquee:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+.mask-fade-x {
+  mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+}
+
+.mask-radial {
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 20%, transparent 75%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .aurora-a,
+  .aurora-b,
+  .animate-marquee {
+    animation: none;
+  }
+}

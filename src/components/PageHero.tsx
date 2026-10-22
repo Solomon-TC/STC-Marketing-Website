@@ -11,10 +11,9 @@ export default function PageHero({
 }) {
   return (
     <section className="relative overflow-hidden bg-ink grain pt-36 pb-20 lg:pt-44 lg:pb-24 border-b border-white/5">
-      <div
-        aria-hidden
-        className="absolute -top-32 left-1/2 -translate-x-1/2 h-72 w-[40rem] rounded-full bg-pine/15 blur-3xl"
-      />
+      <div aria-hidden className="absolute inset-x-0 -top-32 flex justify-center">
+        <div className="aurora-a h-72 w-[40rem] rounded-full bg-pine/20 blur-3xl" />
+      </div>
       <div className="relative mx-auto max-w-4xl px-6 lg:px-10 text-center">
         <Reveal>
           {eyebrow && <span className="text-xs uppercase tracking-widest text-pine-light">{eyebrow}</span>}

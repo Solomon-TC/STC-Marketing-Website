@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/site";
 
 /**
- * AI answer engines are a real referral source for local service searches,
+ * AI answer engines are a real referral source for service searches,
  * so their crawlers are allowed explicitly rather than left to the wildcard.
  */
 const AI_CRAWLERS = [

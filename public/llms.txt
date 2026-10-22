@@ -1,24 +1,32 @@
 # STC Marketing
 
-> STC Marketing is a web design company that designs, builds, hosts, and manages custom websites for local businesses across the United States. We also publish The Newberg Spotlight, a shared oversized direct mail postcard that runs in Newberg, Oregon only.
+> STC Marketing is a web design and development company that designs, builds, integrates, and manages premium custom websites for businesses across the United States. Based in Oregon; works with clients nationwide through a fully remote process.
 
 ## Services
 
-- **Web design and website management** (primary service) — Custom websites designed from scratch (never templates) for local businesses. Every build includes mobile-first responsive layouts, fast load times, on-page SEO and real meta tags, hosting and domain management, security and software updates, and ongoing support after launch. Available anywhere in the United States; the process runs remotely.
-- **The Spotlights** (secondary service) — A shared 9x12" direct mail postcard featuring multiple local businesses, mailed to 5,000 households. Only one business per industry appears on each card. Ad design is included at no extra cost. Currently runs in Newberg, Oregon only.
+- **Custom website design and development** (primary service) — Premium websites designed and built from scratch, never from templates or page builders. Every build includes mobile-first responsive layouts, fast load times, on-page SEO and structured data, integrations with the client's business tools, hosting and domain management, security and software updates, and ongoing support after launch.
+- **Website integrations** — Connects sites to the software a business runs on: Jobber for scheduling and client management, OpenTable for restaurant reservations, lead and quote forms delivered to email, Google reviews, and analytics. Also builds custom features such as client logins, audio and media players, before-and-after sliders, and interactive tools.
+- **The Spotlights** (secondary) — A shared 9x12" direct mail postcard featuring multiple businesses, mailed to 5,000 households in Newberg, Oregon. One business per industry on each card.
 
-## Service areas
+## Service area
 
-Website services are available nationwide and handled remotely. The company started in Newberg, Oregon and has dedicated local coverage in:
+Nationwide. Based in Oregon, with clients in Oregon and across the country (including New Jersey, New York, and Pennsylvania). All work can be done remotely.
 
-- **Yamhill County:** Newberg, Dundee, McMinnville, Lafayette, Carlton, Yamhill
-- **Portland metro:** Sherwood, Tigard, Tualatin, Wilsonville, Lake Oswego, Beaverton, Hillsboro
-- **Willamette Valley:** Corvallis
+## Selected clients
+
+- Z&D Builders — roofing and remodeling (Newberg, OR)
+- David Spatola Entertainment — pianist, vocalist, and DJ (NJ, NY & PA)
+- PDX Construction Solutions — remodeling and construction (Portland, OR)
+- Pacific Crematory — cremation equipment manufacturer (Oregon, sells nationwide)
+- Valley Boys Window & Gutter — exterior cleaning (Newberg, OR)
+- Newberg Pet Cremation — private pet cremation (Newberg, OR)
+- All Starr Solutions — hauling and junk removal (Newberg, OR)
+- Wholeheart Home — house cleaning (Newberg, OR)
+- Well Hung Gutters — gutter installation and cleaning (Philomath, OR)
 
 ## Company facts
 
 - Founded by brothers Silas and Solomon Capell
-- Works with local businesses nationwide; remote process, no public storefront
 - Rated 5.0 out of 5 on Google
 - Email: stcmarketingco@gmail.com
 - Phone: (503) 808-0452
@@ -26,9 +34,8 @@ Website services are available nationwide and handled remotely. The company star
 
 ## Key pages
 
-- [Home](https://www.stcmarketingco.com): Overview of services.
-- [Web design](https://www.stcmarketingco.com/website-design): Website services, process, service areas, and FAQ.
-- [The Spotlights](https://www.stcmarketingco.com/the-spotlights): How the shared direct mail postcard works.
-- [The Newberg Spotlight](https://www.stcmarketingco.com/the-spotlights/newberg): The Newberg edition specifically.
+- [Home](https://www.stcmarketingco.com): Custom web design and development services.
+- [Websites](https://www.stcmarketingco.com/website-design): Full portfolio, what every build includes, integrations, process, and FAQ.
 - [About](https://www.stcmarketingco.com/about): Who runs STC Marketing.
-- [Contact](https://www.stcmarketingco.com/contact): Quote requests and inquiries.
+- [Contact](https://www.stcmarketingco.com/contact): Project inquiries and quotes.
+- [The Spotlights](https://www.stcmarketingco.com/the-spotlights): The Newberg direct mail postcard.

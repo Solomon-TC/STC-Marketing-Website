@@ -7,7 +7,14 @@ import CtaBanner from "@/components/CtaBanner";
 import FaqSection from "@/components/FaqSection";
 import WebsitePortfolio from "@/components/WebsitePortfolio";
 import { CITIES, SHARED_FAQS, getCity } from "@/lib/cities";
-import { SITE, ORG_ID, absoluteUrl, breadcrumbSchema, faqSchema } from "@/lib/site";
+import {
+  SITE,
+  ORG_ID,
+  WEBSITE_INCLUDES,
+  absoluteUrl,
+  breadcrumbSchema,
+  faqSchema,
+} from "@/lib/site";
 
 type Props = { params: Promise<{ city: string }> };
 
@@ -41,15 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const INCLUDES = [
-  "Custom design — no templates",
-  "Mobile-first, responsive layouts",
-  "Fast load times",
-  "On-page SEO and real meta tags",
-  "Hosting and domain management",
-  "Security and software updates",
-  "Ongoing support after launch",
-];
+const INCLUDES = WEBSITE_INCLUDES;
 
 export default async function CityPage({ params }: Props) {
   const { city: slug } = await params;
@@ -138,7 +137,7 @@ export default async function CityPage({ params }: Props) {
         </ol>
       </nav>
 
-      {/* Local context */}
+      {/* City context */}
       <section className="bg-ink py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 grid lg:grid-cols-2 gap-16">
           <Reveal>
@@ -179,19 +178,16 @@ export default async function CityPage({ params }: Props) {
               </ul>
               <Link
                 href="/contact"
-                className="mt-8 inline-flex items-center justify-center rounded-full bg-pine-light px-7 py-3.5 text-sm uppercase tracking-wide text-ink transition-transform duration-300 hover:scale-[1.03] hover:bg-pine"
+                className="mt-8 inline-flex items-center justify-center rounded-full bg-pine-light px-7 py-3.5 text-sm uppercase tracking-wide text-ink transition-[background-color,box-shadow] duration-300 hover:bg-[#7c9b83] hover:shadow-[0_0_40px_-10px_rgba(107,138,114,0.75)]"
               >
-                Get a Quote
+                Start your project
               </Link>
             </div>
           </Reveal>
         </div>
       </section>
 
-      <WebsitePortfolio
-        eyebrow="Recent builds"
-        heading={`Websites we've built for local businesses.`}
-      />
+      <WebsitePortfolio eyebrow="Recent builds" heading="Websites we've built." />
 
       <FaqSection
         faqs={faqs}
@@ -207,8 +203,7 @@ export default async function CityPage({ params }: Props) {
               We also build websites nearby.
             </h2>
             <p className="mt-3 text-sm text-mist">
-              Serving {city.name}, the surrounding area, and local businesses
-              across the country.
+              Based in Oregon, building for clients across the country.
             </p>
             <ul className="mt-8 flex flex-wrap gap-3">
               {nearby.map((c) => (

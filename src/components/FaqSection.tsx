@@ -4,13 +4,15 @@ export default function FaqSection({
   faqs,
   eyebrow = "Questions",
   heading = "Straight answers.",
+  tone = "charcoal",
 }: {
   faqs: { q: string; a: string }[];
   eyebrow?: string;
   heading?: string;
+  tone?: "ink" | "charcoal";
 }) {
   return (
-    <section className="bg-charcoal py-24 lg:py-32 border-t border-white/5">
+    <section className={`${tone === "ink" ? "bg-ink" : "bg-charcoal"} py-24 lg:py-32 border-t border-white/5`}>
       <div className="mx-auto max-w-3xl px-6 lg:px-10">
         <Reveal>
           <span className="text-xs uppercase tracking-widest text-pine-light">{eyebrow}</span>

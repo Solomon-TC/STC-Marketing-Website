@@ -6,27 +6,27 @@ import CtaBanner from "@/components/CtaBanner";
 import PhotoPlaceholder from "@/components/PhotoPlaceholder";
 
 export const metadata: Metadata = {
-  title: "About STC Marketing | Custom Web Design for Local Businesses",
+  title: "About STC Marketing | Custom Web Design & Development",
   description:
-    "STC Marketing is a web design company founded by brothers Silas and Solomon Capell, helping local businesses across the country get found and get chosen.",
+    "STC Marketing is a web design company founded by brothers Silas and Solomon Capell. Based in Oregon, we design, build, and manage premium custom websites for businesses across the country.",
   alternates: { canonical: "/about" },
 };
 
 const VALUES = [
   {
-    title: "Community over competition",
-    description:
-      "The Spotlights puts multiple businesses on one card, because we believe local businesses grow stronger when they lift each other up, not when they undercut each other.",
-  },
-  {
     title: "Craft, not shortcuts",
     description:
-      "Every ad, every postcard, every website is built from scratch. No stock templates, no cut corners. If your name is on it, it should look like someone cared.",
+      "Every site is designed and built from scratch. No templates, no page builders, no cut corners. If your name is on it, it should look like someone cared.",
   },
   {
-    title: "Consistency wins",
+    title: "Built to work, not just to look good",
     description:
-      "One mailer doesn't change a business. Showing up in the same mailboxes month after month does. Everything we build is designed to be part of a long game.",
+      "A beautiful site that's slow, confusing, or disconnected from how you run your business isn't finished. Every build is fast, clear, and wired into the tools you use.",
+  },
+  {
+    title: "We stay after launch",
+    description:
+      "A website isn't a one-time purchase. We host it, maintain it, and keep it improving, so it stays fast, secure, and current for years — not just on launch day.",
   },
 ];
 
@@ -37,11 +37,11 @@ export default function AboutPage() {
         eyebrow="About Us"
         title={
           <>
-            Two brothers building sites for
-            <span className="text-tan italic"> local businesses.</span>
+            Two brothers building websites that
+            <span className="text-tan italic"> actually work.</span>
           </>
         }
-        description="STC Marketing designs, builds, and manages custom websites for local businesses across the country — and gets them found."
+        description="Based in Oregon, STC Marketing designs, builds, and manages premium custom websites for businesses across the country."
       />
 
       <section className="bg-ink py-24 lg:py-32">
@@ -84,12 +84,12 @@ export default function AboutPage() {
                   <span className="text-paper">Silas and Solomon Capell.</span>
                 </p>
                 <p>
-                  We have a love for business, and found that through STC
-                  Marketing we can combine our skills to connect individuals of
-                  our home communities to the great local companies within them.
-                  The Spotlight aims to be a source of trust for the community
-                  and an exclusive opportunity for businesses to spread awareness
-                  of their brand as the leader of their field.
+                  We have a love for business, and STC Marketing is where we
+                  combine our skills &mdash; Silas&apos;s business background
+                  and Solomon&apos;s eye for design &mdash; to build websites
+                  that help great companies look like the leaders they are.
+                  What started with businesses in our hometown has grown into
+                  work for clients across the country.
                 </p>
                 <p>
                   Silas is an OSU Alumni in Finance, and he was a co-founder of

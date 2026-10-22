@@ -13,16 +13,17 @@ export const SITE = {
   base: { city: "Newberg", state: "Oregon", stateCode: "OR" },
 } as const;
 
-/** Service-area business: no public street address, so we publish the areas we serve instead. */
-export const geo = {
-  "@type": "GeoCircle",
-  geoMidpoint: {
-    "@type": "GeoCoordinates",
-    latitude: 45.3001,
-    longitude: -122.9737,
-  },
-  geoRadius: "80000",
-} as const;
+/** What every website build includes. Shared by the websites page and city pages. */
+export const WEBSITE_INCLUDES = [
+  "Custom design — no templates",
+  "Mobile-first, responsive layouts",
+  "Fast load times",
+  "Integrations with your business tools",
+  "On-page SEO and structured data",
+  "Hosting and domain management",
+  "Security and software updates",
+  "Ongoing support after launch",
+];
 
 export function absoluteUrl(path = "") {
   return `${SITE.url}${path}`;
@@ -38,7 +39,7 @@ export function organizationSchema(areaServed: object[]) {
     "@id": ORG_ID,
     name: SITE.name,
     description:
-      "STC Marketing designs, builds, hosts, and manages custom websites for local businesses across the country. We also run The Spotlights, a shared oversized direct mail postcard in Newberg, Oregon.",
+      "STC Marketing designs, builds, and manages premium custom websites for businesses across the United States — integrated with the tools they run on, fast, and maintained after launch. Based in Oregon.",
     url: SITE.url,
     email: SITE.email,
     telephone: SITE.phoneRaw,
@@ -57,13 +58,12 @@ export function organizationSchema(areaServed: object[]) {
       bestRating: "5",
     },
     areaServed,
-    serviceArea: geo,
     knowsAbout: [
       "Web design",
-      "Website development",
-      "Local SEO",
-      "Direct mail marketing",
-      "Small business marketing",
+      "Custom website development",
+      "Website integrations",
+      "Search engine optimization",
+      "Managed website hosting",
     ],
   };
 }

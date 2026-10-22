@@ -7,6 +7,8 @@ export type Project = {
   url: string;
   /** Link label. Sites without their own domain yet get a friendlier label. */
   display: string;
+  /** Keep off homepage displays. Still listed in the full portfolio on the websites page. */
+  hideOnHome?: boolean;
 };
 
 /**
@@ -63,6 +65,7 @@ export const WEBSITE_PROJECTS: Project[] = [
       "Detail-first house cleaning — standard, deep, and move-in/move-out cleans for Newberg and the surrounding area.",
     url: "https://wholehearthomellc.com",
     display: "wholehearthomellc.com",
+    hideOnHome: true,
   },
   {
     slug: "well-hung-gutters",
@@ -93,6 +96,16 @@ export const WEBSITE_PROJECTS: Project[] = [
       "Twenty-five years of live piano and vocals for weddings, corporate parties, and open houses across the tri-state area.",
     url: "https://www.davidspatolaentertainment.com",
     display: "davidspatolaentertainment.com",
+  },
+  {
+    slug: "newberg-pet-cremation",
+    name: "Newberg Pet Cremation",
+    category: "Pet Cremation",
+    location: "Newberg, OR",
+    description:
+      "Gentle, private pet cremation from a family-owned team — with clear pricing, pickup service, and after-hours care.",
+    url: "https://www.newbergpetcremation.com",
+    display: "newbergpetcremation.com",
   },
 ];
 

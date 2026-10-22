@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { CITIES } from "@/lib/cities";
 
 export default function Footer() {
   return (
@@ -20,8 +19,8 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-sm text-mist leading-relaxed max-w-xs">
-            Custom websites for local businesses across the country. Designed,
-            built, hosted, and managed so you get found.
+            Premium custom websites — designed, built, integrated, and managed
+            for businesses across the country.
           </p>
         </div>
 
@@ -33,6 +32,11 @@ export default function Footer() {
             <li>
               <Link href="/website-design" className="hover:text-pine-light transition-colors">
                 Websites
+              </Link>
+            </li>
+            <li>
+              <Link href="/website-design#work" className="hover:text-pine-light transition-colors">
+                Our work
               </Link>
             </li>
             <li>
@@ -76,28 +80,7 @@ export default function Footer() {
                 (503) 808-0452
               </a>
             </li>
-            <li className="text-mist">Serving local businesses nationwide</li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Service areas — sitewide internal links to city landing pages */}
-      <div className="border-t border-white/10">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-10">
-          <h4 className="text-xs uppercase tracking-widest text-fog mb-4">
-            Web design by city
-          </h4>
-          <ul className="flex flex-wrap gap-x-5 gap-y-2.5">
-            {CITIES.map((city) => (
-              <li key={city.slug}>
-                <Link
-                  href={`/website-design/${city.slug}`}
-                  className="text-sm text-mist hover:text-pine-light transition-colors"
-                >
-                  Web design in {city.name}
-                </Link>
-              </li>
-            ))}
+            <li className="text-mist">Based in Oregon &middot; Serving clients nationwide</li>
           </ul>
         </div>
       </div>
@@ -105,7 +88,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-6 flex flex-col sm:flex-row justify-between gap-2 text-xs text-mist">
           <span>&copy; {new Date().getFullYear()} STC Marketing. All rights reserved.</span>
-          <span>Built for local business.</span>
+          <span>Designed and built in-house.</span>
         </div>
       </div>
     </footer>

@@ -22,25 +22,25 @@ export const CITIES: City[] = [
     county: "Yamhill County",
     region: "Yamhill County",
     blurb:
-      "Custom web design for Newberg, Oregon businesses. Built, hosted, and managed by a local team — no templates.",
+      "Custom web design for Newberg, Oregon businesses — premium sites designed, built, and managed by the team that started here.",
     intro: [
-      "Newberg is where STC Marketing started. It's where we run The Newberg Spotlight, and it's where a lot of our first websites went live. We know the businesses on First Street, we know how much of this town's work comes from word of mouth, and we know that word of mouth now ends with somebody looking you up on their phone.",
-      "That last step is where most Newberg businesses lose the job. You get recommended, they search your name, and they find a site that hasn't been touched in six years — or no site at all. We build the page that closes that gap.",
+      "Newberg is where STC Marketing started, and it's still home. Some of our first builds went live here, and we know firsthand how much business in this town starts with a referral and ends with a search.",
+      "That search is the moment that matters. Someone hears your name, looks you up, and decides in a few seconds whether you're the real deal. A custom, fast, well-built site makes that decision easy.",
     ],
     angle: {
-      heading: "A town that runs on reputation.",
-      body: "Newberg is small enough that your reputation travels fast, and big enough that new people move in every year who've never heard of you. A good website works for both — it confirms what your neighbors already said about you, and it introduces you to everyone who just got here.",
+      heading: "Where referrals turn into searches.",
+      body: "In a town where reputation travels fast, your website is where a recommendation either holds up or falls apart. We build sites that look as good as the work behind them, so the referral closes itself.",
     },
     proof:
-      "We've built and manage sites for Newberg businesses including Z&D Builders and Valley Boy's Window & Gutter.",
+      "We've built websites for Newberg businesses including Z&D Builders, Valley Boys Window & Gutter, Newberg Pet Cremation, All Starr Solutions, and Wholeheart Home.",
     faqs: [
       {
-        q: "Do you work with businesses based in Newberg, Oregon?",
-        a: "Yes. Newberg is our home base — it's where STC Marketing started and where we run The Newberg Spotlight direct mail postcard. We've built and currently manage websites for Newberg businesses including Z&D Builders and Valley Boy's Window & Gutter.",
+        q: "Do you work with businesses in Newberg, Oregon?",
+        a: "Yes. Newberg is where STC Marketing started and where we're based. We've built websites for Newberg businesses including Z&D Builders, Valley Boys Window & Gutter, Newberg Pet Cremation, All Starr Solutions, and Wholeheart Home — and we work with clients across the country from here.",
       },
       {
         q: "Can I get on The Newberg Spotlight and get a website at the same time?",
-        a: "Yes, and a lot of businesses do both. The Spotlight puts you in 5,000 Newberg mailboxes, and the website is where those people land when they look you up afterward. They work better together than either does alone.",
+        a: "Yes. The Newberg Spotlight puts your business in 5,000 Newberg mailboxes, and your website is where those people land when they look you up afterward. The two work better together than either does alone.",
       },
     ],
   },
@@ -50,19 +50,19 @@ export const CITIES: City[] = [
     county: "Yamhill County",
     region: "Yamhill County",
     blurb:
-      "Web design for Dundee, Oregon businesses — tasting rooms, trades, and local services. Custom built and fully managed.",
+      "Custom web design for Dundee, Oregon businesses — wineries, tasting rooms, and service companies. Built from scratch and fully managed.",
     intro: [
-      "Dundee is a few minutes down 99W from us, and it punches well above its size. The Dundee Hills bring in visitors from all over the country, which means a lot of businesses here are being found by people who have never set foot in Oregon before.",
-      "That changes what your website has to do. It isn't just confirming your reputation for locals — for a good share of your traffic, it *is* the first impression. If someone is deciding between two tasting rooms or two contractors from a hotel room in Portland, the better site usually wins.",
+      "Dundee punches far above its size. The Dundee Hills draw visitors from across the country, which means a lot of the people finding your business have never been to Oregon — and they're deciding where to go from a phone screen.",
+      "For that audience, your website isn't confirming a reputation. It is the first impression. When someone is choosing between two tasting rooms from a hotel in Portland, the more polished, more useful site usually wins the visit.",
     ],
     angle: {
       heading: "Visitors decide before they arrive.",
-      body: "Wine country traffic plans ahead. People look up hours, photos, and directions before they ever get in the car. A site that loads fast on a phone and answers those questions immediately turns a browser into someone standing at your door.",
+      body: "Wine country traffic plans ahead — hours, photos, reservations, directions. A fast, beautifully designed site that answers those questions instantly, with booking built in, turns a browser into a guest.",
     },
     faqs: [
       {
         q: "Do you build websites for Dundee wineries and tasting rooms?",
-        a: "Yes. Dundee is a few minutes from our home base in Newberg. We build custom sites for any local business in the area — tasting rooms, trades, and service businesses alike. Every site is designed from scratch rather than dropped into a template.",
+        a: "Yes. Dundee is just down the road from our home base in Newberg. We design custom sites for wineries, tasting rooms, and service businesses — built from scratch, with reservations and booking tools wired in where they make sense.",
       },
     ],
   },
@@ -72,19 +72,19 @@ export const CITIES: City[] = [
     county: "Yamhill County",
     region: "Yamhill County",
     blurb:
-      "Custom websites for McMinnville, Oregon businesses. Designed, built, hosted, and maintained — no templates, no guesswork.",
+      "Custom websites for McMinnville, Oregon businesses — designed, built, hosted, and maintained. No templates, no guesswork.",
     intro: [
-      "McMinnville is the biggest city in Yamhill County and the busiest place to be a local business in it. Third Street alone has more competition per block than most towns have total, and there's a steady stream of new arrivals through Linfield and the wine industry who don't have a regular plumber, dentist, or contractor yet.",
-      "Those people pick by searching. Not by asking a neighbor — they don't have one yet. That makes your website and your search presence the difference between getting called and getting skipped, and it's why a real site matters more here than in the smaller towns around it.",
+      "McMinnville is the largest city in Yamhill County and the most competitive place to do business in it. Third Street alone has more options per block than most towns have in total, and new residents arriving through Linfield and the wine industry are choosing providers from scratch.",
+      "Those people pick by searching and comparing. When they have three tabs open, the business with the sharpest, fastest, most trustworthy site tends to get the call — even when everyone does good work.",
     ],
     angle: {
-      heading: "More competition means the details matter.",
-      body: "In a town this size you're rarely the only option. When someone has three tabs open comparing you to two competitors, the business with the clearer, faster, better-looking site tends to get the call — even when all three do equally good work.",
+      heading: "When everyone's good, the details decide.",
+      body: "In a crowded market, a premium site is a competitive edge you can see. Clean design, fast load times, and clear next steps make you the obvious choice before a prospect ever picks up the phone.",
     },
     faqs: [
       {
         q: "Do you work with McMinnville businesses?",
-        a: "Yes. McMinnville is about fifteen minutes from our home base in Newberg, and it's one of the main markets we serve. We handle the design, build, hosting, and ongoing maintenance so you aren't managing any of it yourself.",
+        a: "Yes. McMinnville is about fifteen minutes from our home base in Newberg. We handle design, build, hosting, and ongoing maintenance, so there's nothing technical for you to manage.",
       },
     ],
   },
@@ -94,19 +94,19 @@ export const CITIES: City[] = [
     county: "Yamhill County",
     region: "Yamhill County",
     blurb:
-      "Web design for Lafayette, Oregon businesses. A custom site built and managed by a local Yamhill County team.",
+      "Custom web design for Lafayette, Oregon businesses — premium sites built and managed by a Yamhill County team.",
     intro: [
-      "Lafayette sits right between Newberg and McMinnville on 99W, which means a lot of businesses here serve customers in both directions. Your actual service area is usually much bigger than the town itself.",
-      "A website is how you make that legible. Someone searching in McMinnville has no way of knowing you're ten minutes away and happy to drive out — unless your site says so plainly. That's a small fix that opens up a lot of jobs.",
+      "Lafayette sits right between Newberg and McMinnville on 99W, so most businesses here serve customers in both directions. Your real market is a lot bigger than the city limits.",
+      "Your website is how you claim that market. Someone searching from McMinnville or Newberg has no way of knowing you cover their area — unless your site makes it obvious, and makes you look like the established choice while it's at it.",
     ],
     angle: {
-      heading: "Your service area is wider than your town.",
-      body: "Small-town businesses routinely lose work to competitors in bigger cities simply because nobody knew they covered the area. Saying exactly where you work, in plain language, on a page built to be found, fixes that.",
+      heading: "Your market is bigger than your town.",
+      body: "Plenty of good businesses lose work to bigger-city competitors simply because nobody knew they served the area. A well-built site with clear service coverage and strong search signals fixes that.",
     },
     faqs: [
       {
-        q: "Is it worth having a website for a small Lafayette business?",
-        a: "Yes — often more than for a business in a bigger city. If you serve customers in McMinnville and Newberg as well as Lafayette, your site is the main way people outside your town find out you cover their area at all.",
+        q: "Do you build websites for Lafayette businesses?",
+        a: "Yes. Lafayette is minutes from our home base in Newberg. We design custom sites that make your full service area clear, and we manage hosting and updates after launch.",
       },
     ],
   },
@@ -116,19 +116,19 @@ export const CITIES: City[] = [
     county: "Yamhill County",
     region: "Yamhill County",
     blurb:
-      "Custom web design for Carlton, Oregon businesses. Built for a town that gets a lot of out-of-town visitors.",
+      "Custom web design for Carlton, Oregon businesses — built for a town that hosts visitors from all over the country.",
     intro: [
-      "Carlton is small, but it draws steady wine country traffic that has nothing to do with how many people live here. A downtown this compact means visitors are deciding between businesses that are all within a two-minute walk of each other.",
-      "When the choice is that close, the deciding factor is usually whatever they found on their phone before they parked. Hours, photos, what you actually offer — if that's hard to find, they walk into the place where it wasn't.",
+      "Carlton is small, but it draws steady wine-country traffic that has nothing to do with its population. In a downtown this compact, visitors are often choosing between places a two-minute walk apart.",
+      "When the choice is that close, it usually comes down to what they found on their phone before they parked — hours, photos, what you offer, how to book. If that's hard to find, they walk into the place where it wasn't.",
     ],
     angle: {
       heading: "Small town, national audience.",
-      body: "Your website is doing work for people who are looking at Carlton from three states away. It has to explain who you are to someone with no local context at all, and do it in the few seconds before they scroll on.",
+      body: "Your site is working for people looking at Carlton from three states away. It needs to introduce you to someone with zero context, make you look like the obvious stop, and do it in seconds.",
     },
     faqs: [
       {
         q: "Do you build websites for businesses in Carlton, Oregon?",
-        a: "Yes. Carlton is about twenty minutes from our home base in Newberg. We build custom sites for local businesses there and handle hosting, updates, and support after launch.",
+        a: "Yes. Carlton is about twenty minutes from our home base in Newberg. We design and build custom sites and handle hosting, updates, and support after launch.",
       },
     ],
   },
@@ -138,19 +138,19 @@ export const CITIES: City[] = [
     county: "Yamhill County",
     region: "Yamhill County",
     blurb:
-      "Web design for Yamhill, Oregon businesses. A straightforward, custom-built site that makes you easy to find.",
+      "Custom web design for Yamhill, Oregon businesses — a polished, professional site that makes you easy to find and easy to choose.",
     intro: [
-      "Yamhill is a small farming town, and most businesses here work well beyond the city limits. Your customers are spread across the north end of the county and out toward the coast range, and a lot of them are finding services the same way everyone else does now — by searching.",
-      "You don't need anything elaborate. You need a site that loads fast, says clearly what you do and where you'll travel, and gives someone an obvious way to call you.",
+      "Yamhill is a farming town, and most businesses here work well beyond the city limits — across the north end of the county and out toward the Coast Range. Customers spread over that much ground find services the same way everyone does now: by searching.",
+      "That makes your website your best salesperson across a wide territory. It should look as professional as the work you do, load fast on a phone with spotty signal, and make it effortless to call or request a quote.",
     ],
     angle: {
-      heading: "Simple, fast, and easy to find.",
-      body: "Not every business needs a big website. Most need a small, honest one that answers the three questions people actually have — what you do, where you work, how to reach you — without making them dig for it.",
+      heading: "Look established across a wide territory.",
+      body: "When customers are spread out, they can't stop by to size you up. Your website does that job for you — and a well-designed one tells them you're the serious, reliable choice.",
     },
     faqs: [
       {
-        q: "Do you take on small businesses in Yamhill?",
-        a: "Yes. We work with businesses of all sizes across Yamhill County, including one-person operations. Every site is custom built, hosted, and maintained by us so you don't have to manage any of the technical side.",
+        q: "Do you work with businesses in Yamhill?",
+        a: "Yes. We build custom sites for businesses across Yamhill County, from owner-operators to growing teams. Every site is designed, hosted, and maintained by us, so the technical side is handled.",
       },
     ],
   },
@@ -160,19 +160,19 @@ export const CITIES: City[] = [
     county: "Washington County",
     region: "Portland Metro",
     blurb:
-      "Custom web design for Sherwood, Oregon businesses. Built, hosted, and managed — serving the Portland metro from nearby Newberg.",
+      "Custom web design for Sherwood, Oregon businesses — premium sites built, hosted, and managed, just up 99W from our Newberg base.",
     intro: [
-      "Sherwood is the closest Portland metro city to us — a short run up 99W from Newberg — and it's grown fast. Old Town still has the small-town feel, but the neighborhoods around it are full of people who moved in recently and have no established go-to for anything yet.",
-      "Those households pick services by searching, and they compare before they call. A business with a current, professional site gets shortlisted. One without gets skipped quietly, and you never find out it happened.",
+      "Sherwood is the closest Portland-metro city to our home base and one of the fastest-growing. Old Town still has its character, but the neighborhoods around it are full of people who moved in recently and haven't picked their go-to anything yet.",
+      "Those households choose by searching and comparing. A business with a modern, professional site gets shortlisted. One without gets skipped quietly — and you never find out it happened.",
     ],
     angle: {
-      heading: "A lot of new neighbors with no go-to yet.",
-      body: "Growing suburbs are the best possible market for a good website, because a large share of your potential customers have no existing loyalty. They're choosing from scratch, and they're choosing based on what they can find.",
+      heading: "A growing market that's still choosing.",
+      body: "Fast-growing suburbs are the best market there is for a great website, because so many customers have no existing loyalty. They're choosing from scratch, and they're choosing based on what they find online.",
     },
     faqs: [
       {
-        q: "Do you serve Sherwood and the Portland metro area?",
-        a: "Yes. Sherwood is the closest metro city to our home base in Newberg, and we already work with clients in the Portland metro area. We handle the design, build, hosting, and ongoing management.",
+        q: "Do you serve Sherwood and the Portland metro?",
+        a: "Yes. Sherwood is the closest metro city to our home base in Newberg, and we already work with clients across the Portland metro. We handle design, build, hosting, and ongoing management.",
       },
     ],
   },
@@ -182,19 +182,19 @@ export const CITIES: City[] = [
     county: "Washington County",
     region: "Portland Metro",
     blurb:
-      "Web design for Tigard, Oregon businesses. Custom sites built to compete in a crowded Portland metro market.",
+      "Custom web design for Tigard, Oregon businesses — sites built to stand out in a crowded Portland-metro market.",
     intro: [
-      "Tigard is dense, competitive, and full of businesses fighting for the same searches. Between the 217 corridor and the Washington Square area, most service categories here have a dozen credible options, and plenty of them are spending real money on marketing.",
-      "You don't beat that by spending more. You beat it by having a site that's obviously better made than the competition's — faster, clearer, and built by someone who cared — and by being straightforward about what you do while everyone else hides behind vague language.",
+      "Tigard is dense, competitive, and full of businesses chasing the same searches. Between the 217 corridor and Washington Square, most categories have a dozen credible options — and plenty of them are spending real money on marketing.",
+      "You don't win that by outspending them. You win by having a site that's visibly better made — faster, clearer, more polished — and by being direct about what you do while everyone else hides behind vague language.",
     ],
     angle: {
       heading: "Standing out in a crowded market.",
-      body: "In a market this saturated, a template site actively works against you, because it looks like the four other template sites the customer just clicked through. Something built from scratch reads as a real business before anyone reads a word.",
+      body: "In a market this saturated, a template site works against you: it looks like the four other template sites the customer just clicked through. A custom build reads as a serious business before anyone reads a word.",
     },
     faqs: [
       {
-        q: "Can a small business in Tigard compete online with bigger companies?",
-        a: "Yes, but not by trying to outspend them. A well-built, fast, genuinely custom site plus clear local search signals will out-convert a bigger competitor running a generic template, because visitors judge credibility in the first few seconds and templates read as generic.",
+        q: "Can my Tigard business compete online with bigger companies?",
+        a: "Yes — not by outspending them, but by out-building them. A fast, genuinely custom site with strong search fundamentals will out-convert a bigger competitor running a generic template, because visitors judge credibility in the first few seconds.",
       },
     ],
   },
@@ -204,19 +204,19 @@ export const CITIES: City[] = [
     county: "Washington County",
     region: "Portland Metro",
     blurb:
-      "Custom websites for Tualatin, Oregon businesses. Designed, built, hosted, and maintained by an Oregon team.",
+      "Custom websites for Tualatin, Oregon businesses — designed, built, hosted, and maintained for residential and commercial clients alike.",
     intro: [
-      "Tualatin runs on a mix of commercial, industrial, and residential work along the I-5 corridor, so businesses here often serve two very different kinds of customers — homeowners and other businesses — and those two groups want completely different things from a website.",
-      "Homeowners want to know you're trustworthy and available. Commercial clients want to know you're capable at scale and won't disappear mid-project. A site that tries to say both things at once usually says neither. Getting that structure right is most of the work.",
+      "Tualatin runs on a mix of commercial, industrial, and residential work along the I-5 corridor, so many businesses here serve two very different audiences — homeowners and other businesses — who want completely different things from a website.",
+      "Homeowners want proof you're trustworthy and available. Commercial clients want proof you can deliver at scale and won't disappear mid-project. A site that tries to say both at once usually says neither. Getting that structure right is most of the work.",
     ],
     angle: {
       heading: "Two audiences, one site.",
-      body: "If you do both residential and commercial work, your site has to serve both without muddling either. That's a structural problem, not a design problem, and it's the kind of thing worth thinking through before anyone picks colors.",
+      body: "If you serve both residential and commercial clients, your site has to guide each one to what they need without muddling either. That's an architecture problem, and it's worth solving before anyone picks colors.",
     },
     faqs: [
       {
-        q: "Do you build websites for both residential and commercial businesses in Tualatin?",
-        a: "Yes. If you serve both, we structure the site so each audience finds what it needs quickly rather than forcing homeowners and commercial clients through the same generic pitch.",
+        q: "Do you build websites for both residential and commercial businesses?",
+        a: "Yes. If you serve both, we structure the site so each audience finds what it needs fast, instead of pushing homeowners and commercial clients through the same generic pitch.",
       },
     ],
   },
@@ -226,19 +226,19 @@ export const CITIES: City[] = [
     county: "Clackamas County",
     region: "Portland Metro",
     blurb:
-      "Web design for Wilsonville, Oregon businesses. Custom built, professionally hosted, and actively maintained.",
+      "Custom web design for Wilsonville, Oregon businesses — premium sites built, professionally hosted, and actively maintained.",
     intro: [
-      "Wilsonville sits right on I-5 with a real mix of corporate campuses and local service businesses. That gives it a professional baseline — people here work at companies with serious websites, and they unconsciously hold local businesses to a similar standard.",
-      "That's a higher bar than in a smaller town, and it's a bar a lot of local businesses fail without realizing it. Looking dated here costs you more than it would somewhere else.",
+      "Wilsonville sits on I-5 with a real mix of corporate campuses and service businesses. That sets a professional baseline: people here spend their workdays around polished software and serious websites, and they hold everyone else to the same standard.",
+      "It's a higher bar than most markets, and plenty of businesses miss it without realizing. Looking dated costs you more here than almost anywhere else.",
     ],
     angle: {
-      heading: "A market that expects a professional standard.",
-      body: "When your customers spend their workdays around well-made software and polished corporate sites, an outdated page stands out immediately. Meeting that expectation isn't vanity — it's the price of being taken seriously.",
+      heading: "A market that expects polish.",
+      body: "When your customers live in well-made software all day, an outdated site stands out immediately. Meeting that standard isn't vanity — it's the price of being taken seriously.",
     },
     faqs: [
       {
         q: "Do you work with Wilsonville businesses?",
-        a: "Yes. Wilsonville is well within our service area and we already have clients in the Portland metro. We build the site, host it, keep it updated and secure, and support it after launch.",
+        a: "Yes. Wilsonville is well within our home region, and we already have clients across the Portland metro. We build the site, host it, keep it secure and current, and support it after launch.",
       },
     ],
   },
@@ -248,19 +248,19 @@ export const CITIES: City[] = [
     county: "Clackamas County",
     region: "Portland Metro",
     blurb:
-      "High-end custom web design for Lake Oswego, Oregon businesses. Built from scratch, never templated.",
+      "High-end custom web design for Lake Oswego, Oregon businesses — built from scratch, never templated.",
     intro: [
-      "Lake Oswego customers have options and are used to paying for quality. That cuts both ways for a local business: people here will spend money on good work, but they're quick to write off anything that looks cheap.",
-      "Your website is usually the first place that judgment happens, and it happens fast — before anyone reads your credentials or your reviews. A site that looks like it cost nothing suggests the work might too.",
+      "Lake Oswego customers have options and are used to paying for quality. That cuts both ways: people here will invest in great work, but they're quick to dismiss anything that looks cheap.",
+      "Your website is usually where that judgment happens, and it happens fast — before anyone reads your credentials or your reviews. A site that looks like it cost nothing suggests the work might too.",
     ],
     angle: {
       heading: "The site has to match the work.",
-      body: "If you do premium work at premium prices, a generic template undercuts you before you ever quote. The site should look like it belongs to the kind of business you actually are.",
+      body: "If you do premium work at premium prices, a generic template undercuts you before you ever quote. Your site should look like it belongs to exactly the kind of business you are.",
     },
     faqs: [
       {
         q: "Do you build high-end websites for Lake Oswego businesses?",
-        a: "Yes. Every site we build is custom designed rather than assembled from a template, which matters most in markets like Lake Oswego where customers are actively judging quality before they call.",
+        a: "Yes. Every site we build is custom designed from scratch, which matters most in markets like Lake Oswego where customers are judging quality before they ever call.",
       },
     ],
   },
@@ -270,19 +270,19 @@ export const CITIES: City[] = [
     county: "Washington County",
     region: "Portland Metro",
     blurb:
-      "Custom web design for Beaverton, Oregon businesses. Fast, mobile-first sites built and managed for you.",
+      "Custom web design for Beaverton, Oregon businesses — fast, mobile-first sites built to rank and managed for you.",
     intro: [
-      "Beaverton is one of the largest and most diverse cities in the state, and the range of local businesses reflects that. It also means the search competition is real — for most service categories you're up against a long list of established names.",
-      "Ranking here takes more than existing. It takes a site that's technically sound, genuinely fast, structured so search engines can read it, and specific about the neighborhoods you actually serve. We build all of that in from the start rather than bolting it on later.",
+      "Beaverton is one of the largest and most diverse cities in the state, and its business landscape reflects that. It also means the search competition is real — in most categories you're up against a long list of established names.",
+      "Ranking here takes more than existing. It takes a site that's technically sound, genuinely fast, structured so search engines can read it, and clear about where you work. We build all of that in from the start rather than bolting it on later.",
     ],
     angle: {
       heading: "Big city, real competition.",
-      body: "In a market this size, the technical fundamentals stop being optional. Load speed, mobile layout, heading structure, and clear local signals are what separate the businesses that show up from the ones that don't.",
+      body: "In a market this size, technical fundamentals stop being optional. Load speed, mobile layout, structure, and strong search signals separate the businesses that show up from the ones that don't.",
     },
     faqs: [
       {
-        q: "Can you help my Beaverton business show up in local search?",
-        a: "That's built into every site we do — proper heading structure, real meta tags, fast load times, mobile-first layouts, and clear signals about the areas you serve. We're an Oregon team and we build for Oregon local search specifically.",
+        q: "Can you help my Beaverton business show up in search?",
+        a: "That's built into every site we do — proper heading structure, real meta tags, structured data, fast load times, and mobile-first layouts. Search performance is part of the build, not an add-on.",
       },
     ],
   },
@@ -292,19 +292,19 @@ export const CITIES: City[] = [
     county: "Washington County",
     region: "Portland Metro",
     blurb:
-      "Web design for Hillsboro, Oregon businesses. Custom sites built to a technical standard, hosted and maintained.",
+      "Custom web design for Hillsboro, Oregon businesses — sites built to a technical standard, then hosted and maintained.",
     intro: [
-      "Hillsboro has a strong tech presence alongside a deep base of trades and local services, which makes for an unusually demanding audience. A meaningful share of your customers work in software and notice immediately when a site is slow or broken on their phone.",
-      "It also means the trades here stay busy, and the businesses that win the best jobs tend to be the ones that look most credible before the first phone call. A fast, well-built site is a competitive advantage in a town where people can tell the difference.",
+      "Hillsboro pairs a major tech presence with a deep base of trades and service businesses, which makes for an unusually demanding audience. A lot of your customers work in software and notice immediately when a site is slow or broken on their phone.",
+      "The trades here stay busy, and the businesses that land the best jobs tend to be the ones that look most credible before the first call. In a town that can tell the difference, a fast, well-engineered site is a real advantage.",
     ],
     angle: {
       heading: "An audience that notices the details.",
-      body: "Slow load times and broken mobile layouts register with this crowd whether or not they could name the problem. Building it properly the first time is cheaper than losing jobs you never knew you were in the running for.",
+      body: "Slow pages and broken mobile layouts register with this crowd whether or not they could name the problem. Building it properly the first time is cheaper than losing jobs you never knew you were up for.",
     },
     faqs: [
       {
-        q: "Do you serve Hillsboro and the greater Washington County area?",
-        a: "Yes. We serve Hillsboro, Beaverton, Tigard, Tualatin, Sherwood, and the rest of the Portland metro from our base in Newberg, and we already have clients in the metro area.",
+        q: "Do you serve Hillsboro and Washington County?",
+        a: "Yes. We serve Hillsboro, Beaverton, Tigard, Tualatin, Sherwood, and the rest of the Portland metro, and we work with clients across the country from our base in Oregon.",
       },
     ],
   },
@@ -314,21 +314,21 @@ export const CITIES: City[] = [
     county: "Benton County",
     region: "Willamette Valley",
     blurb:
-      "Custom web design for Corvallis, Oregon businesses. Built, hosted, and managed — with local clients already on the books.",
+      "Custom web design for Corvallis, Oregon businesses — built, hosted, and managed, with clients already in the area.",
     intro: [
-      "Corvallis has a constantly refreshing population thanks to Oregon State, which means a meaningful slice of your potential customers every year are people who arrived recently and have no established plumber, dentist, gutter company, or contractor.",
-      "Those people find services by searching, and they trust what they find. That's a real, recurring opportunity — but only if your business is actually findable when they look.",
+      "Corvallis has a constantly refreshing population thanks to Oregon State, so every year a meaningful share of your potential customers are people who just arrived and have no established plumber, dentist, gutter company, or contractor.",
+      "They find services by searching, and they trust what they find. That's a real, recurring opportunity — but only if your business is easy to find and impressive when they land on it.",
     ],
     angle: {
       heading: "A new set of customers every year.",
-      body: "In most towns your customer base turns over slowly. In Corvallis it refreshes constantly, which rewards businesses that are easy to find online far more than businesses relying purely on long-standing word of mouth.",
+      body: "In most towns the customer base turns over slowly. In Corvallis it refreshes constantly, which rewards businesses with a strong online presence far more than businesses relying on word of mouth alone.",
     },
     proof:
-      "We built and manage the site for Well Hung Gutters, a gutter installation and maintenance company serving Corvallis.",
+      "We built and manage the site for Well Hung Gutters, a gutter installation and cleaning company serving the Corvallis area.",
     faqs: [
       {
-        q: "Do you have clients in Corvallis?",
-        a: "Yes. We built and manage the website for Well Hung Gutters, a gutter installation and maintenance company serving the Corvallis area.",
+        q: "Do you have clients in the Corvallis area?",
+        a: "Yes. We built and manage the website for Well Hung Gutters, a gutter installation and cleaning company based in nearby Philomath.",
       },
     ],
   },
@@ -337,23 +337,24 @@ export const CITIES: City[] = [
 /** Questions that apply everywhere, appended after the city-specific ones. */
 export const SHARED_FAQS = (city: string) => [
   {
-    q: `What does STC Marketing include in a website for a ${city} business?`,
-    a: "Every build includes custom design with no templates, mobile-first responsive layouts, fast load times, on-page SEO and real meta tags, hosting and domain management, security and software updates, and ongoing support after launch.",
+    q: `What's included in a website for a ${city} business?`,
+    a: "Every build includes custom design with no templates, mobile-first responsive layouts, fast load times, integrations with the tools you use, on-page SEO and structured data, hosting and domain management, security and software updates, and ongoing support after launch.",
   },
   {
     q: "Do you use website templates?",
     a: "No. Every site is designed from scratch around your brand. Templates are the fastest way to look like every other business in your category, which is the opposite of what a website is supposed to do for you.",
   },
   {
+    q: "Can you connect my site to the tools I already use?",
+    a: "Yes. We integrate with tools like Jobber for scheduling and client management and OpenTable for reservations, route lead forms straight to your inbox, and add Google reviews and analytics. If you need something custom, we build it.",
+  },
+  {
     q: "Do you handle hosting and maintenance, or just build the site?",
     a: "Both. We design and build the site, then handle hosting, domain management, security, and software updates after launch. You don't have to manage any of the technical side or think about it again.",
   },
   {
-    q: `Is The Spotlights direct mail postcard available in ${city}?`,
-    a:
-      city === "Newberg"
-        ? "Yes. The Newberg Spotlight is our shared 9x12\" postcard mailed to 5,000 Newberg households, with one business per industry on each card."
-        : `The Spotlights currently runs in Newberg, Oregon only. Website design, hosting, and management are available anywhere in the country, including ${city}.`,
+    q: "Do you only work with businesses in Oregon?",
+    a: "No. We're based in Oregon and build websites for clients across the country. The whole process runs remotely, so where you are doesn't limit what we can build.",
   },
   {
     q: "How do I get started?",
@@ -364,8 +365,3 @@ export const SHARED_FAQS = (city: string) => [
 export function getCity(slug: string) {
   return CITIES.find((c) => c.slug === slug);
 }
-
-export const CITIES_BY_REGION = CITIES.reduce<Record<string, City[]>>((acc, city) => {
-  (acc[city.region] ??= []).push(city);
-  return acc;
-}, {});

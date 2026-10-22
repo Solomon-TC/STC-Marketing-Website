@@ -1,6 +1,9 @@
 import Hero from "@/components/Hero";
-import ServicesOverview from "@/components/ServicesOverview";
-import PortfolioCarousel from "@/components/PortfolioCarousel";
+import ClientMarquee from "@/components/ClientMarquee";
+import Capabilities from "@/components/Capabilities";
+import WebsitePortfolio from "@/components/WebsitePortfolio";
+import Integrations from "@/components/Integrations";
+import ProcessSteps from "@/components/ProcessSteps";
 import Testimonials from "@/components/Testimonials";
 import FaqSection from "@/components/FaqSection";
 import CtaBanner from "@/components/CtaBanner";
@@ -9,15 +12,19 @@ import { faqSchema } from "@/lib/site";
 const FAQS = [
   {
     q: "What does STC Marketing do?",
-    a: "We design, build, host, and manage custom websites for local businesses across the country. Every site is built from scratch, and we keep running it after launch so you never have to deal with the technical side.",
+    a: "We design, build, and manage premium custom websites for businesses across the country. Every site is built from scratch, connected to the tools you run on, and looked after long after launch.",
   },
   {
-    q: "Do you only work with businesses in Oregon?",
-    a: "No. We started in Newberg, Oregon and still work with a lot of businesses there, but we build and manage websites for local businesses anywhere in the country. The whole process works remotely.",
+    q: "Where are you based, and who do you work with?",
+    a: "We're based in Oregon and build websites for clients all over the country. The whole process runs remotely — calls, design reviews, and launch — so where you are doesn't limit what we can build.",
   },
   {
-    q: "How much does a website cost?",
+    q: "How much does a custom website cost?",
     a: "It depends on how many pages you need and what the site has to do. Send us a message describing your business and we'll give you a straight number — no packages you have to decode, no pressure.",
+  },
+  {
+    q: "What integrations can you add?",
+    a: "We connect sites to the tools businesses run on — Jobber for scheduling and client management, OpenTable for restaurant reservations, lead forms that route straight to your inbox, Google reviews, and analytics. If you need something custom, like a client login or an interactive tool, we build that too.",
   },
   {
     q: "Do you use templates?",
@@ -33,6 +40,9 @@ const FAQS = [
   },
 ];
 
+/** A spread across industries and regions, led by the strongest visuals. */
+const FEATURED_WORK = ["zd-builders", "david-spatola", "pdx-construction", "valley-boys"];
+
 export default function Home() {
   return (
     <>
@@ -41,10 +51,19 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(FAQS)) }}
       />
       <Hero />
-      <ServicesOverview />
-      <PortfolioCarousel />
-      <Testimonials />
-      <FaqSection faqs={FAQS} eyebrow="Common questions" heading="Straight answers." />
+      <ClientMarquee />
+      <Capabilities tone="charcoal" />
+      <WebsitePortfolio
+        tone="ink"
+        eyebrow="Selected work"
+        heading="Recent builds."
+        featured={FEATURED_WORK}
+        showAllLink
+      />
+      <Integrations tone="charcoal" />
+      <ProcessSteps tone="ink" />
+      <Testimonials tone="charcoal" />
+      <FaqSection faqs={FAQS} eyebrow="Common questions" heading="Straight answers." tone="ink" />
       <CtaBanner />
     </>
   );

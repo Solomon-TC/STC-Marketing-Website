@@ -8,7 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const NAV_LINKS = [
   { href: "/website-design", label: "Websites" },
-  { href: "/the-spotlights", label: "The Spotlights" },
+  { href: "/website-design#work", label: "Work" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
@@ -80,7 +80,7 @@ export default function Header() {
           href="/contact"
           className="hidden lg:inline-flex items-center rounded-full border border-pine-light/60 px-5 py-2.5 text-sm uppercase tracking-wide text-pine-light hover:bg-pine-light hover:text-ink transition-colors duration-300"
         >
-          Get a Quote
+          Start a project
         </Link>
 
         <button
@@ -130,7 +130,7 @@ export default function Header() {
                 href="/contact"
                 className="mt-2 inline-flex w-fit items-center rounded-full border border-pine-light/60 px-5 py-2.5 text-sm uppercase tracking-wide text-pine-light"
               >
-                Get a Quote
+                Start a project
               </Link>
             </div>
           </motion.nav>

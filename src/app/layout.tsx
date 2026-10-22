@@ -3,9 +3,9 @@ import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MotionProvider from "@/components/MotionProvider";
 import { Analytics } from "@vercel/analytics/next";
 import { SITE, organizationSchema } from "@/lib/site";
-import { CITIES } from "@/lib/cities";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -22,17 +22,17 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Custom Web Design for Local Businesses | STC Marketing",
+    default: "Custom Web Design & Development Agency | STC Marketing",
     template: "%s | STC Marketing",
   },
   description:
-    "STC Marketing designs, builds, hosts, and manages custom websites for local businesses across the country. No templates, and nothing technical left on your plate after launch.",
+    "Premium custom websites designed, built, and managed for businesses across the country. Real integrations, fast performance, and no templates — ever. Based in Oregon.",
   metadataBase: new URL(SITE.url),
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Custom Web Design for Local Businesses | STC Marketing",
+    title: "Beautiful websites that actually work | STC Marketing",
     description:
-      "Custom websites for local businesses across the country — designed, built, hosted, and managed.",
+      "Premium custom web design and development for businesses nationwide — integrated with your tools and managed after launch.",
     siteName: SITE.name,
     locale: "en_US",
     type: "website",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Custom Web Design for Local Businesses | STC Marketing",
+    title: "Beautiful websites that actually work | STC Marketing",
     description:
-      "Custom websites for local businesses across the country — designed, built, hosted, and managed.",
+      "Premium custom web design and development for businesses nationwide — integrated with your tools and managed after launch.",
   },
   robots: {
     index: true,
@@ -52,32 +52,24 @@ export const metadata: Metadata = {
 };
 
 /**
- * We serve the whole country, with named cities kept as structured entities so
- * the city landing pages keep their local search signal.
+ * National at the organization level. The Oregon city pages still carry their
+ * own city-level Service schema, so they keep their search signal on their own.
  */
-const areaServed = [
-  { "@type": "Country", name: "United States" },
-  { "@type": "State", name: "Oregon" },
-  ...CITIES.map((c) => ({
-    "@type": "City",
-    name: c.name,
-    containedInPlace: { "@type": "State", name: "Oregon" },
-  })),
-];
+const areaServed = [{ "@type": "Country", name: "United States" }];
 
 const jsonLd = {
   ...organizationSchema(areaServed),
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Marketing Services",
+    name: "Website Services",
     itemListElement: [
       {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: "Website Design and Management",
+          name: "Custom Website Design and Development",
           description:
-            "Custom website design for local businesses — fast, mobile-first, and built to convert. Includes hosting, domain management, security updates, and ongoing support.",
+            "Premium custom websites built from scratch — fast, mobile-first, integrated with your business tools, and managed after launch with hosting, security updates, and ongoing support.",
         },
       },
       {
@@ -86,7 +78,7 @@ const jsonLd = {
           "@type": "Service",
           name: "The Spotlights",
           description:
-            "Shared 9×12″ direct mail postcard featuring multiple local businesses, mailed to 5,000 households per city. One business per industry.",
+            "Shared 9×12″ direct mail postcard featuring multiple businesses, mailed to 5,000 households in Newberg, Oregon. One business per industry.",
         },
       },
     ],
@@ -124,9 +116,11 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col bg-ink text-paper">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <MotionProvider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </MotionProvider>
         <Analytics />
       </body>
     </html>

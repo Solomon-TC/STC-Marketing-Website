@@ -1,146 +1,169 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
-import { useMotionValue, useSpring, useTransform, motion } from "framer-motion";
-import type { PointerEvent } from "react";
+import { Fragment, type PointerEvent } from "react";
+import { motion, type Variants } from "framer-motion";
 import Stars from "./Stars";
-import { GOOGLE_REVIEWS_URL } from "./Testimonials";
+import { SITE } from "@/lib/site";
+
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+const HEADLINE: { text: string; accent?: boolean }[] = [
+  { text: "Beautiful" },
+  { text: "websites" },
+  { text: "that" },
+  { text: "actually", accent: true },
+  { text: "work.", accent: true },
+];
+
+const headline: Variants = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.08, delayChildren: 0.2 } },
+};
+
+const word: Variants = {
+  hidden: { opacity: 0, y: "0.35em", filter: "blur(12px)" },
+  show: {
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: { duration: 1, ease: EASE },
+  },
+};
+
+const fadeUp = (delay: number) => ({
+  initial: { opacity: 0, y: 16, filter: "blur(6px)" },
+  animate: { opacity: 1, y: 0, filter: "blur(0px)" },
+  transition: { duration: 0.9, delay, ease: EASE },
+});
 
 export default function Hero() {
-  const mx = useMotionValue(0);
-  const my = useMotionValue(0);
-  const tiltX = useSpring(useTransform(my, [-0.5, 0.5], [8, -8]), { stiffness: 150, damping: 20 });
-  const tiltY = useSpring(useTransform(mx, [-0.5, 0.5], [-10, 10]), { stiffness: 150, damping: 20 });
-
-  function onPointerMove(e: PointerEvent<HTMLDivElement>) {
+  function onPointerMove(e: PointerEvent<HTMLElement>) {
     const r = e.currentTarget.getBoundingClientRect();
-    mx.set((e.clientX - r.left) / r.width - 0.5);
-    my.set((e.clientY - r.top) / r.height - 0.5);
+    e.currentTarget.style.setProperty("--mx", `${e.clientX - r.left}px`);
+    e.currentTarget.style.setProperty("--my", `${e.clientY - r.top}px`);
   }
-  function onPointerLeave() { mx.set(0); my.set(0); }
 
   return (
-    <section className="relative overflow-hidden bg-ink grain pt-32 pb-24 lg:pt-44 lg:pb-32">
-      {/* ambient glow */}
-      <div aria-hidden className="absolute -top-40 -left-32 h-[36rem] w-[36rem] rounded-full bg-pine/20 blur-3xl" />
-      <div aria-hidden className="absolute -bottom-32 -right-20 h-[28rem] w-[28rem] rounded-full bg-pine-light/10 blur-3xl" />
-
-      {/* faint grid */}
-      <svg aria-hidden className="absolute inset-0 h-full w-full opacity-[0.06]" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
-            <path d="M 56 0 L 0 0 0 56" fill="none" stroke="#a3a3aa" strokeWidth="0.5" />
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#grid)" />
-      </svg>
-
-      {/* Copy — constrained to left portion of container */}
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-10">
-        <div className="lg:max-w-[42%]">
-          <motion.a
-            href={GOOGLE_REVIEWS_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            className="group inline-flex items-center gap-2 rounded-full border border-white/15 py-1.5 pl-3 pr-4 transition-colors duration-300 hover:border-pine-light/40"
-          >
-            <Stars className="h-3.5 w-3.5" />
-            <span className="text-xs text-fog group-hover:text-paper transition-colors duration-300">
-              5.0 on Google
-            </span>
-          </motion.a>
-
-          <motion.h1
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display text-balance mt-5 text-5xl leading-[1.05] text-paper sm:text-6xl lg:text-7xl"
-          >
-            Marketing that
-            <span className="text-tan italic"> works, </span>
-            without the guesswork.
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-6 text-lg text-fog leading-relaxed"
-          >
-            STC Marketing builds and manages custom websites for local
-            businesses across the country. Designed from scratch, built to
-            convert, and looked after long after launch.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-10 flex flex-wrap items-center gap-4"
-          >
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-full bg-pine-light px-7 py-3.5 text-sm uppercase tracking-wide text-ink transition-transform duration-300 hover:scale-[1.03] hover:bg-pine"
-            >
-              Get a Quote
-            </Link>
-            <a
-              href="#services"
-              className="inline-flex items-center justify-center rounded-full border border-white/15 px-7 py-3.5 text-sm uppercase tracking-wide text-paper transition-colors duration-300 hover:border-pine-light hover:text-pine-light"
-            >
-              Our Services
-            </a>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            className="mt-14 flex flex-wrap gap-10"
-          >
-            {[
-              ["Custom websites", "Zero templates, ever"],
-              ["Hosting included", "Updates, security, support"],
-              ["Nationwide", "Local businesses anywhere"],
-            ].map(([stat, label]) => (
-              <div key={label}>
-                <div className="font-display text-2xl text-paper">{stat}</div>
-                <div className="text-xs uppercase tracking-widest text-mist mt-1">{label}</div>
-              </div>
-            ))}
-          </motion.div>
-        </div>
+    <section
+      onPointerMove={onPointerMove}
+      className="relative isolate overflow-hidden bg-ink grain"
+    >
+      {/* Ambient light */}
+      <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+        <div className="aurora-a absolute -top-[20%] left-[8%] h-[42rem] w-[42rem] rounded-full bg-pine/25 blur-3xl" />
+        <div className="aurora-b absolute top-[5%] right-[2%] h-[36rem] w-[36rem] rounded-full bg-tan/10 blur-3xl" />
+        <svg className="mask-radial absolute inset-0 h-full w-full opacity-[0.07]" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="hero-grid" width="64" height="64" patternUnits="userSpaceOnUse">
+              <path d="M 64 0 L 0 0 0 64" fill="none" stroke="#a3a3aa" strokeWidth="0.5" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#hero-grid)" />
+        </svg>
       </div>
 
-      {/* Hero image — absolutely positioned to right side of section, desktop only */}
-      <motion.div
-        initial={{ opacity: 0, x: 40 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.9, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-        className="hidden lg:flex absolute inset-y-0 right-0 lg:w-[46%] xl:w-[52%] items-center"
-      >
-        <div
-          style={{ perspective: 1200 }}
-          onPointerMove={onPointerMove}
-          onPointerLeave={onPointerLeave}
-          className="w-full px-8"
+      {/* Light that follows the cursor */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 -z-10"
+        style={{
+          background:
+            "radial-gradient(640px circle at var(--mx, 50%) var(--my, 30%), rgba(201, 160, 106, 0.07), transparent 60%)",
+        }}
+      />
+
+      <div className="mx-auto flex min-h-svh max-w-5xl flex-col items-center justify-center px-6 pt-32 pb-28 text-center lg:px-10">
+        <motion.a
+          {...fadeUp(0)}
+          href={SITE.googleReviewsUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.03] py-1.5 pl-3.5 pr-4 backdrop-blur-sm transition-colors duration-300 hover:border-pine-light/50"
         >
-          <motion.div style={{ rotateX: tiltX, rotateY: tiltY }}>
-            <Image
-              src="/images/hero-image-3.png"
-              alt="Custom website design by STC Marketing"
-              width={1483}
-              height={704}
-              className="w-full h-auto"
-              sizes="(max-width: 1279px) 46vw, 52vw"
-              priority
+          <Stars className="h-3.5 w-3.5" />
+          <span className="text-xs text-fog transition-colors duration-300 group-hover:text-paper">
+            {SITE.rating.value} on Google
+          </span>
+        </motion.a>
+
+        <motion.h1
+          variants={headline}
+          initial="hidden"
+          animate="show"
+          className="font-display text-balance mt-8 text-5xl leading-[1.02] tracking-tight text-paper sm:text-6xl md:text-7xl lg:text-[5.5rem]"
+        >
+          {HEADLINE.map((w, i) => (
+            <Fragment key={w.text}>
+              <motion.span
+                variants={word}
+                className={`inline-block ${w.accent ? "text-tan italic" : ""}`}
+              >
+                {w.text}
+              </motion.span>
+              {i < HEADLINE.length - 1 && " "}
+            </Fragment>
+          ))}
+        </motion.h1>
+
+        <motion.p
+          {...fadeUp(0.75)}
+          className="mt-8 max-w-2xl text-lg leading-relaxed text-fog sm:text-xl"
+        >
+          Custom design and development for businesses across the country.
+          No templates, no shortcuts — fast, polished sites connected to the
+          tools you run on, and looked after long after launch.
+        </motion.p>
+
+        <motion.div
+          {...fadeUp(0.9)}
+          className="mt-11 flex flex-wrap items-center justify-center gap-4"
+        >
+          <Link
+            href="/contact"
+            className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-pine-light px-8 py-4 text-sm uppercase tracking-wide text-ink transition-[background-color,box-shadow] duration-300 hover:bg-[#7c9b83] hover:shadow-[0_0_48px_-10px_rgba(107,138,114,0.75)]"
+          >
+            <span
+              aria-hidden
+              className="absolute inset-0 -translate-x-full bg-linear-to-r from-transparent via-white/30 to-transparent transition-transform duration-700 group-hover:translate-x-full"
             />
-          </motion.div>
-        </div>
+            <span className="relative">Start your project</span>
+            <span aria-hidden className="relative transition-transform duration-300 group-hover:translate-x-0.5">
+              &rarr;
+            </span>
+          </Link>
+          <a
+            href="#work"
+            className="inline-flex items-center rounded-full border border-white/15 px-8 py-4 text-sm uppercase tracking-wide text-paper transition-colors duration-300 hover:border-pine-light hover:text-pine-light"
+          >
+            See our work
+          </a>
+        </motion.div>
+
+        <motion.p
+          {...fadeUp(1.05)}
+          className="mt-10 text-xs uppercase tracking-widest text-mist"
+        >
+          Based in Oregon &middot; Building for clients nationwide
+        </motion.p>
+      </div>
+
+      {/* Scroll cue */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.6, duration: 1 }}
+        aria-hidden
+        className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-3 text-[10px] uppercase tracking-[0.3em] text-mist sm:flex"
+      >
+        <span>Scroll</span>
+        <span className="relative h-10 w-px overflow-hidden bg-white/10">
+          <motion.span
+            className="absolute inset-x-0 top-0 h-1/2 bg-pine-light"
+            animate={{ y: ["-100%", "200%"] }}
+            transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+          />
+        </span>
       </motion.div>
     </section>
   );

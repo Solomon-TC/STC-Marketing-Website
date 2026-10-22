@@ -228,7 +228,11 @@ export default function NewbergSpotlightPage() {
         </div>
       </section>
 
-      <CtaBanner />
+      <CtaBanner
+        heading="The right customers are out there. Let's put your name in front of them."
+        subtext={null}
+        buttonLabel="Get in touch"
+      />
     </>
   );
 }
