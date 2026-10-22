@@ -30,7 +30,7 @@ const STEPS: Step[] = [
     kind: "single",
     id: "businessType",
     title: "What kind of business do you run?",
-    options: ["Restaurant", "Winery or tasting room", "Brewery, bar, or taproom", "Café or bakery", OTHER],
+    options: ["Restaurant", "Winery or brewery", "Home service", OTHER],
     other: OTHER,
   },
   {
@@ -376,7 +376,7 @@ export default function LeadForm() {
                               ref={focusOnMount}
                               value={answers.businessOther}
                               onChange={(e) => updateField("businessOther", e.target.value)}
-                              placeholder="e.g. Food truck, event venue"
+                              placeholder="e.g. Golf course, event venue"
                               className={INPUT}
                             />
                             <PrimaryButton type="submit" disabled={!answers.businessOther.trim()}>
