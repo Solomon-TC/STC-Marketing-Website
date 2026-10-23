@@ -19,7 +19,7 @@ export const SITE = {
    * Meta Pixel ID for ad conversion tracking. Empty means the Pixel never loads.
    * Turning it on adds tracking cookies, so the privacy policy must be updated with it.
    */
-  metaPixelId: "" as string,
+  metaPixelId: "1138896375241413" as string,
   base: { city: "Newberg", state: "Oregon", stateCode: "OR" },
 } as const;
 

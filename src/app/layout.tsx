@@ -47,6 +47,10 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
   },
+  // Proves to Meta that we own the domain, so the Pixel's ad conversions count.
+  verification: {
+    other: { "facebook-domain-verification": "ja81iwkk6snovhrig5fywu6hlfoapk" },
+  },
 };
 
 /**

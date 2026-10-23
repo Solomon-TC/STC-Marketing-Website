@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
 
       <section className="bg-ink py-24 lg:py-32">
         <div className="mx-auto max-w-3xl px-6 lg:px-10">
-          <p className="text-sm text-mist italic">Last updated: October 22, 2026</p>
+          <p className="text-sm text-mist italic">Last updated: October 23, 2026</p>
 
           <p className="mt-6 text-fog leading-relaxed">
             STC Marketing (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) operates the website{" "}
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
 
           <h2 className="font-display mt-12 text-2xl text-paper">How we use your information</h2>
           <p className="mt-4 text-fog leading-relaxed">
-            We use the information you submit solely to respond to your inquiry and, if you become a customer, to provide the services you&apos;ve asked us for. Your contact form submissions are reviewed only by STC Marketing&apos;s owner and staff. We do not sell, rent, or share your personal information with third parties for their own marketing purposes.
+            We use the information you submit solely to respond to your inquiry and, if you become a customer, to provide the services you&apos;ve asked us for. Your contact form submissions are reviewed only by STC Marketing&apos;s owner and staff. Except as described under &ldquo;Cookies and tracking&rdquo; below, we do not sell, rent, or share your personal information with third parties for their own marketing purposes.
           </p>
 
           <h2 className="font-display mt-12 text-2xl text-paper">Service providers</h2>
@@ -48,7 +48,28 @@ export default function PrivacyPolicyPage() {
 
           <h2 className="font-display mt-12 text-2xl text-paper">Cookies and tracking</h2>
           <p className="mt-4 text-fog leading-relaxed">
-            This Site does not use advertising or tracking cookies. We use{" "}
+            Our advertising landing page uses the Meta Pixel, a tool from Meta Platforms (the company behind Facebook and Instagram). It sets cookies that tell us when someone who saw one of our ads visits the page, submits the form, or books a call, which helps us measure and improve our ads. Meta may also use this data, under its own{" "}
+            <a
+              href="https://www.facebook.com/privacy/policy/"
+              className="text-pine-light underline underline-offset-2 hover:text-paper transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              privacy policy
+            </a>
+            , to show you ads. We don&apos;t send Meta the details you type into our form. You can control how Meta uses this data in your{" "}
+            <a
+              href="https://www.facebook.com/adpreferences"
+              className="text-pine-light underline underline-offset-2 hover:text-paper transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Facebook ad preferences
+            </a>
+            , or block these cookies in your browser settings.
+          </p>
+          <p className="mt-4 text-fog leading-relaxed">
+            The rest of this Site does not use advertising or tracking cookies. We use{" "}
             <a
               href="https://vercel.com/docs/analytics"
               className="text-pine-light underline underline-offset-2 hover:text-paper transition-colors"
