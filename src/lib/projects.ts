@@ -107,6 +107,16 @@ export const WEBSITE_PROJECTS: Project[] = [
     url: "https://www.newbergpetcremation.com",
     display: "newbergpetcremation.com",
   },
+  {
+    slug: "belleroph",
+    name: "Belleroph Rope Access",
+    category: "Commercial Window Cleaning",
+    location: "Seattle, WA",
+    description:
+      "Rope access window cleaning for commercial buildings across Seattle — high-rise glass cleaned with no lifts or scaffolding.",
+    url: "https://www.belleroph.net",
+    display: "belleroph.net",
+  },
 ];
 
 export function projectImage(slug: string) {
